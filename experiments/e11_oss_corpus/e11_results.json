@@ -1,0 +1,35 @@
+{
+  "apps": 28,
+  "graphs": 47,
+  "nodes": 382,
+  "edges": 384,
+  "graphs_with_mp": 31,
+  "graphs_with_mp_pct": 65.95744680851064,
+  "aggregate_mp_pct": 16.49214659685864,
+  "tree_over_fail_pct": 70.05208333333333,
+  "tree_over_mean": 3.0859375,
+  "tree_over_max": 31,
+  "batch_pairs": 126,
+  "batch_fail_pct": 19.841269841269842,
+  "batch_max": 16,
+  "repository_clustered": {
+    "independent_unit": "GitHub repository",
+    "repositories": 28,
+    "mean_repo_graphs_with_multiparent_pct": 64.28571428571429,
+    "mean_repo_graphs_with_multiparent_pct_ci95": [
+      47.32142857142857,
+      81.25
+    ],
+    "mean_repo_tree_failure_pct": 58.751771475980895,
+    "mean_repo_tree_failure_pct_ci95": [
+      45.44804720133668,
+      71.59909274101004
+    ],
+    "repositories_with_batch_candidates": 20,
+    "mean_repo_batch_failure_pct": 17.71391108891109,
+    "mean_repo_batch_failure_pct_ci95": [
+      8.98101898101898,
+      26.755952380952383
+    ]
+  }
+}

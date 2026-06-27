@@ -1,0 +1,22 @@
+{
+  "method": "Manual source audit of ten deterministically spaced corpus graphs after excluding tests, examples, tutorials, and notebooks.",
+  "selection": "round(j*(N-1)/9), j=0..9, over corpus_graphs.json order",
+  "sample_size": 10,
+  "extracted_edges_audited": 66,
+  "false_positive_edges": 0,
+  "known_enumerable_false_negative_edges": 8,
+  "files_with_non_enumerable_dynamic_targets": 2,
+  "interpretation": "Observed edge precision was 66/66 in the sample. Recall is a lower bound: one file had eight loop-generated edges omitted and two files used routing functions whose targets cannot be enumerated statically.",
+  "sample": [
+    {"index": 0, "repo": "gpt-researcher", "file": "multi_agents/agents/orchestrator.py", "extracted_edges": 6, "false_positives": 0, "known_misses": 0},
+    {"index": 5, "repo": "company-research-agent.git", "file": "backend/graph.py", "extracted_edges": 4, "false_positives": 0, "known_misses": 8, "note": "loop-variable endpoints are intentionally outside the literal extractor"},
+    {"index": 10, "repo": "GustoBot.git", "file": "gustobot/application/agents/kg_sub_graph/agentic_rag_agents/workflows/multi_agent/text2cypher_with_viz_and_follow_ups.py", "extracted_edges": 9, "false_positives": 0, "known_misses": 0},
+    {"index": 15, "repo": "mentis.git", "file": "super_agents/deep_research/reason_graph/graph.py", "extracted_edges": 11, "false_positives": 0, "known_misses": 0},
+    {"index": 20, "repo": "readwren.git", "file": "src/agents/interview_agent.py", "extracted_edges": 2, "false_positives": 0, "known_misses": 0},
+    {"index": 26, "repo": "multi-agent-rag-customer-support.git", "file": "customer_support_chat/app/graph.py", "extracted_edges": 19, "false_positives": 0, "known_misses": "non-enumerable routing-function targets"},
+    {"index": 31, "repo": "AssemblyZero.git", "file": "assemblyzero/workflows/orchestrator/graph.py", "extracted_edges": 3, "false_positives": 0, "known_misses": 0},
+    {"index": 36, "repo": "Corvus.git", "file": "backend/app/agent/paper_finder.py", "extracted_edges": 4, "false_positives": 0, "known_misses": "non-enumerable routing-function targets"},
+    {"index": 41, "repo": "Agentic-Cybersecurity-Pipeline.git", "file": "agent_langgraph.py", "extracted_edges": 4, "false_positives": 0, "known_misses": 0},
+    {"index": 46, "repo": "cartograph.git", "file": "src/agent/graph.py", "extracted_edges": 4, "false_positives": 0, "known_misses": 0}
+  ]
+}

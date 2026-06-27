@@ -1,0 +1,85 @@
+{
+  "domains": {
+    "ci_vendor": {
+      "key_id": "16f20ee86742ba1b",
+      "public_key": "6cef0529f8a4faaf6b797186f04248b107b12fcc2c949c5309c855ce72f68868"
+    },
+    "data_org": {
+      "key_id": "5e04c8000b8062c1",
+      "public_key": "3fa3bb865bf217e8968bfff07942f259c6a795d8901ced38c286063cad4424e5"
+    },
+    "eng_team": {
+      "key_id": "b36c8836a53bfb59",
+      "public_key": "d152919ad32af77bc551db03e9b35ffcf908710e34e598f9d31a1a5ed772a3ff"
+    },
+    "federation_root": {
+      "key_id": "09c99b582eddcf7c",
+      "public_key": "34170619a8a5657afac5ba004b860a89454ff05a41f3b9160fcf6485c5995f1e"
+    },
+    "infra_vendor": {
+      "key_id": "b473ef2e21746eb5",
+      "public_key": "bf2ab8cb119a7cdd54086da2b7666931bde8d1583fce60638c21219baaa68f28"
+    },
+    "ops_vendor": {
+      "key_id": "e299821da56741cc",
+      "public_key": "7e91c712097ffb5b558e36f483417c8c02879d88f1d6ad72fc508f74d5c89a00"
+    },
+    "org_alpha": {
+      "key_id": "afebcb37a87a66c5",
+      "public_key": "ad6cfc38564b4cf0f7609326fc12d7f5025ecd8f9689e751e10a4eed0eea496f"
+    },
+    "payments_vendor": {
+      "key_id": "c06df9108bb883f9",
+      "public_key": "c97051acee3253657d61cb1634eb24b2f8ae3f5b9078348ec12ac5205cb9f29c"
+    },
+    "rag_org": {
+      "key_id": "da2897416d01ab1b",
+      "public_key": "195503835cddd0aa03aa1b6518127ab95248de17008dc6c17457e99cdb17e32a"
+    },
+    "sre_root": {
+      "key_id": "ea7e336d48e60066",
+      "public_key": "8ea74b41c99eaf54fde2e8784b0c067a1b879c35c564fd76047586a40fa552b1"
+    },
+    "sre_team_a": {
+      "key_id": "4db22d6e45d8e4d6",
+      "public_key": "8210ee220a4ea6837838ee9eeeddbf3515ac6e8f9ece3cba4d030ddb3bfe86e8"
+    },
+    "sre_team_b": {
+      "key_id": "39153d97d760bbe9",
+      "public_key": "7c5f4a90a7829f16f7bd221ca3040c474a0ee1f919a174d71ffd01d4ad1dcc15"
+    },
+    "sre_tools": {
+      "key_id": "58b5eca71566da77",
+      "public_key": "63872f7e3df76cec728155d29098a4469624f0239c6f5b31d693c0dafde15a04"
+    },
+    "support_a": {
+      "key_id": "99bd17bcafefd8f9",
+      "public_key": "a36ead45b06845084693592f24672ac15984fe9200c86c4b9e68638b3e6d87e2"
+    },
+    "support_b": {
+      "key_id": "c4af9d90a79c9850",
+      "public_key": "6645377d24577ff3fda3a32c4b30bd52e9491d4078d05acafeac820a279a00df"
+    },
+    "support_root": {
+      "key_id": "eb657c611b259cf0",
+      "public_key": "84d6d745d804c727be8fadb5fd3db22c3de5df380cc5f94ace64ef6f14d1ef73"
+    },
+    "tenant_a": {
+      "key_id": "c360800f25958fb5",
+      "public_key": "c3c355d9c1b22cf7a0bf9d265b22d3b5cf2b5982b513a7e4dbcdde44ae8fb03d"
+    },
+    "tenant_b": {
+      "key_id": "02cc2dccd895253c",
+      "public_key": "11c5907585d37a40c0cd10b3a88c2c4c7ffa2f99dc80627d0570fac2581dfc77"
+    },
+    "tool_vendor": {
+      "key_id": "96c220348b0eaecd",
+      "public_key": "56f935f6021bc601b1f2d9a57a8c476971e4fb39199614df9dc10e892241d149"
+    },
+    "travel_org": {
+      "key_id": "a0838a348d633b29",
+      "public_key": "b220881d1bcbda645c11e5654dfe094bc36aec014d9d5f8a98e08687d01bc683"
+    }
+  },
+  "epoch_id": "e16-framework-replay"
+}

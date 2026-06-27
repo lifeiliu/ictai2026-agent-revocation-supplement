@@ -1,0 +1,265 @@
+{
+  "estimand": "probability that tree cascade over-revokes for one uniformly sampled edge in one generated graph",
+  "independent_unit": "generated graph seed",
+  "selection": "one uniformly random edge per graph seed",
+  "stopping_rule": "1000 predeclared seeds per size/ratio cell",
+  "risk_differences": [
+    {
+      "nodes": 80,
+      "contrast": "shared_ratio 0.65 minus 0.10",
+      "risk_difference_percentage_points": 51.10000000000001,
+      "ci95": [
+        47.533688572207986,
+        54.66631142779203
+      ]
+    },
+    {
+      "nodes": 200,
+      "contrast": "shared_ratio 0.65 minus 0.10",
+      "risk_difference_percentage_points": 49.39999999999999,
+      "ci95": [
+        45.87096570716576,
+        52.929034292834224
+      ]
+    },
+    {
+      "nodes": 500,
+      "contrast": "shared_ratio 0.65 minus 0.10",
+      "risk_difference_percentage_points": 45.300000000000004,
+      "ci95": [
+        41.85588902617817,
+        48.74411097382184
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "nodes": 80,
+      "shared_ratio": 0.1,
+      "seeds": 1000,
+      "failure_pct": 38.3,
+      "failure_ci95": [
+        35.337219710896264,
+        41.35232971602528
+      ],
+      "mean_overrev": 1.473,
+      "mean_overrev_ci95": [
+        1.2698205252182875,
+        1.6761794747817127
+      ],
+      "median_overrev": 0.0,
+      "max_overrev": 30,
+      "observed_multiparent_pct_mean": 8.515,
+      "observed_edges_mean": 85.812
+    },
+    {
+      "nodes": 80,
+      "shared_ratio": 0.25,
+      "seeds": 1000,
+      "failure_pct": 63.5,
+      "failure_ci95": [
+        60.46966883157053,
+        66.42700490659693
+      ],
+      "mean_overrev": 2.725,
+      "mean_overrev_ci95": [
+        2.4402498300979274,
+        3.009750169902073
+      ],
+      "median_overrev": 1.0,
+      "max_overrev": 40,
+      "observed_multiparent_pct_mean": 21.4075,
+      "observed_edges_mean": 96.126
+    },
+    {
+      "nodes": 80,
+      "shared_ratio": 0.45,
+      "seeds": 1000,
+      "failure_pct": 78.6,
+      "failure_ci95": [
+        75.9510673578123,
+        81.03003404304617
+      ],
+      "mean_overrev": 3.835,
+      "mean_overrev_ci95": [
+        3.493723006303638,
+        4.176276993696361
+      ],
+      "median_overrev": 2.0,
+      "max_overrev": 34,
+      "observed_multiparent_pct_mean": 38.2825,
+      "observed_edges_mean": 109.626
+    },
+    {
+      "nodes": 80,
+      "shared_ratio": 0.65,
+      "seeds": 1000,
+      "failure_pct": 89.4,
+      "failure_ci95": [
+        87.33891741189649,
+        91.15952297949596
+      ],
+      "mean_overrev": 4.64,
+      "mean_overrev_ci95": [
+        4.240515927521304,
+        5.039484072478696
+      ],
+      "median_overrev": 2.0,
+      "max_overrev": 41,
+      "observed_multiparent_pct_mean": 55.395,
+      "observed_edges_mean": 123.316
+    },
+    {
+      "nodes": 200,
+      "shared_ratio": 0.1,
+      "seeds": 1000,
+      "failure_pct": 41.7,
+      "failure_ci95": [
+        38.68141568349206,
+        44.782110833042026
+      ],
+      "mean_overrev": 3.343,
+      "mean_overrev_ci95": [
+        2.8150868276703838,
+        3.870913172329616
+      ],
+      "median_overrev": 0.0,
+      "max_overrev": 69,
+      "observed_multiparent_pct_mean": 9.1625,
+      "observed_edges_mean": 217.325
+    },
+    {
+      "nodes": 200,
+      "shared_ratio": 0.25,
+      "seeds": 1000,
+      "failure_pct": 70.2,
+      "failure_ci95": [
+        67.29220295046439,
+        72.95319034664543
+      ],
+      "mean_overrev": 7.83,
+      "mean_overrev_ci95": [
+        6.910404361744849,
+        8.749595638255151
+      ],
+      "median_overrev": 2.0,
+      "max_overrev": 109,
+      "observed_multiparent_pct_mean": 22.932,
+      "observed_edges_mean": 244.864
+    },
+    {
+      "nodes": 200,
+      "shared_ratio": 0.45,
+      "seeds": 1000,
+      "failure_pct": 83.7,
+      "failure_ci95": [
+        81.28242949684974,
+        85.85963753842753
+      ],
+      "mean_overrev": 10.695,
+      "mean_overrev_ci95": [
+        9.573576213169318,
+        11.816423786830683
+      ],
+      "median_overrev": 3.0,
+      "max_overrev": 138,
+      "observed_multiparent_pct_mean": 41.427,
+      "observed_edges_mean": 281.854
+    },
+    {
+      "nodes": 200,
+      "shared_ratio": 0.65,
+      "seeds": 1000,
+      "failure_pct": 91.1,
+      "failure_ci95": [
+        89.1742264575647,
+        92.71120247863402
+      ],
+      "mean_overrev": 13.119,
+      "mean_overrev_ci95": [
+        11.850209337973183,
+        14.387790662026816
+      ],
+      "median_overrev": 4.0,
+      "max_overrev": 126,
+      "observed_multiparent_pct_mean": 59.7945,
+      "observed_edges_mean": 318.589
+    },
+    {
+      "nodes": 500,
+      "shared_ratio": 0.1,
+      "seeds": 1000,
+      "failure_pct": 48.4,
+      "failure_ci95": [
+        45.31460446312376,
+        51.497641612352695
+      ],
+      "mean_overrev": 9.716,
+      "mean_overrev_ci95": [
+        8.047188867454885,
+        11.384811132545114
+      ],
+      "median_overrev": 0.0,
+      "max_overrev": 240,
+      "observed_multiparent_pct_mean": 9.4426,
+      "observed_edges_mean": 546.213
+    },
+    {
+      "nodes": 500,
+      "shared_ratio": 0.25,
+      "seeds": 1000,
+      "failure_pct": 72.6,
+      "failure_ci95": [
+        69.75305924825857,
+        75.27396493563658
+      ],
+      "mean_overrev": 16.682,
+      "mean_overrev_ci95": [
+        14.202734858696536,
+        19.161265141303463
+      ],
+      "median_overrev": 2.0,
+      "max_overrev": 316,
+      "observed_multiparent_pct_mean": 23.694,
+      "observed_edges_mean": 617.47
+    },
+    {
+      "nodes": 500,
+      "shared_ratio": 0.45,
+      "seeds": 1000,
+      "failure_pct": 85.8,
+      "failure_ci95": [
+        83.49936351835585,
+        87.8266305428586
+      ],
+      "mean_overrev": 24.406,
+      "mean_overrev_ci95": [
+        21.215961568504728,
+        27.59603843149527
+      ],
+      "median_overrev": 3.0,
+      "max_overrev": 339,
+      "observed_multiparent_pct_mean": 42.7992,
+      "observed_edges_mean": 712.996
+    },
+    {
+      "nodes": 500,
+      "shared_ratio": 0.65,
+      "seeds": 1000,
+      "failure_pct": 93.7,
+      "failure_ci95": [
+        92.02047348625318,
+        95.04505557729631
+      ],
+      "mean_overrev": 31.126,
+      "mean_overrev_ci95": [
+        27.467118860040035,
+        34.78488113995997
+      ],
+      "median_overrev": 5.0,
+      "max_overrev": 337,
+      "observed_multiparent_pct_mean": 61.962,
+      "observed_edges_mean": 808.81
+    }
+  ]
+}

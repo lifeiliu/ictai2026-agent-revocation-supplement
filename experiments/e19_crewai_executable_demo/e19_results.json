@@ -1,0 +1,42 @@
+{
+  "alternate_parent_cases": 1,
+  "alternate_parent_preserved_by_edge_target": 1,
+  "alternate_parent_wrongly_revoked_by_tree": 1,
+  "crew_kickoff_completed": true,
+  "crew_output": "deterministic offline CrewAI task result",
+  "crewai_version": "1.15.1",
+  "cross_domain_target_cases": 2,
+  "cross_domain_under_revoked_by_scoped": 2,
+  "experiment": "E19 CrewAI tiny executable artifact",
+  "llm_calls_observed": 8,
+  "normalized_trace_path": "traces/normalized_events.jsonl",
+  "per_trace": [
+    {
+      "all_edge_cases": 7,
+      "alternate_parent_cases": 1,
+      "alternate_parent_preserved_by_edge_target": 1,
+      "alternate_parent_wrongly_revoked_by_tree": 1,
+      "cross_domain_edges": 5,
+      "cross_domain_target_cases": 2,
+      "cross_domain_under_revoked_by_scoped": 2,
+      "deployer_scoped_exact_cases": 5,
+      "edges": 7,
+      "framework": "crewai-1.15.1",
+      "input_cell": "purchase-order-reconciliation",
+      "multiparent_agents": 1,
+      "nodes": 7,
+      "signed_delegation_events": 7,
+      "trace_id": "crewai-executable-procurement-r000",
+      "tree_exact_cases": 2,
+      "valid_signed_delegation_events": 7,
+      "workflow": "crewai-cross-org-procurement-executable"
+    }
+  ],
+  "purpose": "Run real CrewAI objects with a deterministic local BaseLLM, then normalize task-context handoffs into signed delegation decisions. This is portability evidence, not production prevalence evidence.",
+  "raw_trace_path": "traces/crewai_runtime_raw.jsonl",
+  "signed_delegation_events": 7,
+  "task_callbacks_observed": 8,
+  "tasks_configured": 8,
+  "trace_units": 1,
+  "valid_signed_delegation_events": 7
+}

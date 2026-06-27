@@ -1,0 +1,6 @@
+baseline,label,target_unit,all_edge_cases,all_edge_exact_matches,all_edge_exact_rate,alternate_parent_cases,alternate_parent_preserved,alternate_parent_preserve_rate,alternate_parent_exact_matches,alternate_parent_exact_rate,over_case_rate,under_case_rate
+edge_contract,Signed edge target (this paper),edge target set,1960,1960,1.000000,320,320,1.000000,320,1.000000,0.000000,0.000000
+complete_graph_revalidation,Credential revocation + full graph revalidation,revoked edge credential,1960,1960,1.000000,320,320,1.000000,320,1.000000,0.000000,0.000000
+holder_node_revocation,Holder/node credential revocation,agent identity or holder token,1960,1020,0.520408,320,0,0.000000,0,0.000000,0.357143,0.122449
+aps_tree_cascade,APS-style tree cascade,subtree,1960,700,0.357143,320,0,0.000000,0,0.000000,0.642857,0.000000
+deployer_scoped_cascade,Deployer-scoped cascade,local registry subtree,1960,960,0.489796,320,300,0.937500,300,0.937500,0.061224,0.448980

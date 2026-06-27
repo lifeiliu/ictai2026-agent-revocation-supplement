@@ -1,0 +1,2296 @@
+[
+  {
+    "repo": "gpt-researcher",
+    "file": "multi_agents/agents/orchestrator.py",
+    "nodes": [
+      "browser",
+      "human",
+      "planner",
+      "publisher",
+      "researcher",
+      "writer"
+    ],
+    "edges": [
+      [
+        "browser",
+        "planner"
+      ],
+      [
+        "human",
+        "planner"
+      ],
+      [
+        "human",
+        "researcher"
+      ],
+      [
+        "planner",
+        "human"
+      ],
+      [
+        "researcher",
+        "writer"
+      ],
+      [
+        "writer",
+        "publisher"
+      ]
+    ]
+  },
+  {
+    "repo": "gpt-researcher",
+    "file": "multi_agents/agents/editor.py",
+    "nodes": [
+      "researcher",
+      "reviewer",
+      "reviser"
+    ],
+    "edges": [
+      [
+        "researcher",
+        "reviewer"
+      ],
+      [
+        "reviewer",
+        "reviser"
+      ],
+      [
+        "reviser",
+        "reviewer"
+      ]
+    ]
+  },
+  {
+    "repo": "open_deep_research",
+    "file": "src/open_deep_research/deep_researcher.py",
+    "nodes": [
+      "clarify_with_user",
+      "compress_research",
+      "final_report_generation",
+      "research_supervisor",
+      "researcher",
+      "researcher_tools",
+      "supervisor",
+      "supervisor_tools",
+      "write_research_brief"
+    ],
+    "edges": [
+      [
+        "research_supervisor",
+        "final_report_generation"
+      ]
+    ]
+  },
+  {
+    "repo": "open_deep_research",
+    "file": "src/legacy/multi_agent.py",
+    "nodes": [
+      "research_agent",
+      "research_agent_tools",
+      "research_team",
+      "supervisor",
+      "supervisor_tools"
+    ],
+    "edges": [
+      [
+        "research_agent",
+        "research_agent_tools"
+      ],
+      [
+        "research_agent_tools",
+        "research_agent"
+      ],
+      [
+        "research_team",
+        "supervisor"
+      ],
+      [
+        "supervisor",
+        "supervisor_tools"
+      ]
+    ]
+  },
+  {
+    "repo": "open_deep_research",
+    "file": "src/legacy/graph.py",
+    "nodes": [
+      "build_section_with_web_research",
+      "compile_final_report",
+      "gather_completed_sections",
+      "generate_queries",
+      "generate_report_plan",
+      "human_feedback",
+      "search_web",
+      "write_final_sections",
+      "write_section"
+    ],
+    "edges": [
+      [
+        "build_section_with_web_research",
+        "gather_completed_sections"
+      ],
+      [
+        "gather_completed_sections",
+        "write_final_sections"
+      ],
+      [
+        "generate_queries",
+        "search_web"
+      ],
+      [
+        "generate_report_plan",
+        "human_feedback"
+      ],
+      [
+        "search_web",
+        "write_section"
+      ],
+      [
+        "write_final_sections",
+        "compile_final_report"
+      ]
+    ]
+  },
+  {
+    "repo": "company-research-agent.git",
+    "file": "backend/graph.py",
+    "nodes": [
+      "briefing",
+      "collector",
+      "company_analyst",
+      "curator",
+      "editor",
+      "enricher",
+      "financial_analyst",
+      "grounding",
+      "industry_analyst",
+      "news_scanner"
+    ],
+    "edges": [
+      [
+        "briefing",
+        "editor"
+      ],
+      [
+        "collector",
+        "curator"
+      ],
+      [
+        "curator",
+        "enricher"
+      ],
+      [
+        "enricher",
+        "briefing"
+      ]
+    ]
+  },
+  {
+    "repo": "DATAGEN.git",
+    "file": "src/core/workflow.py",
+    "nodes": [
+      "Coder",
+      "HumanChoice",
+      "HumanReview",
+      "Hypothesis",
+      "NoteTaker",
+      "Process",
+      "QualityReview",
+      "Refiner",
+      "Report",
+      "Search",
+      "Visualization"
+    ],
+    "edges": [
+      [
+        "HumanChoice",
+        "Hypothesis"
+      ],
+      [
+        "HumanChoice",
+        "Process"
+      ],
+      [
+        "HumanReview",
+        "Process"
+      ],
+      [
+        "Hypothesis",
+        "HumanChoice"
+      ],
+      [
+        "NoteTaker",
+        "Process"
+      ],
+      [
+        "Process",
+        "Coder"
+      ],
+      [
+        "Process",
+        "Refiner"
+      ],
+      [
+        "Process",
+        "Report"
+      ],
+      [
+        "Process",
+        "Search"
+      ],
+      [
+        "Process",
+        "Visualization"
+      ],
+      [
+        "QualityReview",
+        "Coder"
+      ],
+      [
+        "QualityReview",
+        "NoteTaker"
+      ],
+      [
+        "QualityReview",
+        "Report"
+      ],
+      [
+        "QualityReview",
+        "Search"
+      ],
+      [
+        "QualityReview",
+        "Visualization"
+      ],
+      [
+        "Refiner",
+        "HumanReview"
+      ]
+    ]
+  },
+  {
+    "repo": "Multi-Agent-Medical-Assistant.git",
+    "file": "agents/agent_decision.py",
+    "nodes": [
+      "BRAIN_TUMOR_AGENT",
+      "CHEST_XRAY_AGENT",
+      "CONVERSATION_AGENT",
+      "RAG_AGENT",
+      "SKIN_LESION_AGENT",
+      "WEB_SEARCH_PROCESSOR_AGENT",
+      "analyze_input",
+      "apply_guardrails",
+      "check_validation",
+      "human_validation",
+      "route_to_agent"
+    ],
+    "edges": [
+      [
+        "BRAIN_TUMOR_AGENT",
+        "check_validation"
+      ],
+      [
+        "CHEST_XRAY_AGENT",
+        "check_validation"
+      ],
+      [
+        "CONVERSATION_AGENT",
+        "check_validation"
+      ],
+      [
+        "SKIN_LESION_AGENT",
+        "check_validation"
+      ],
+      [
+        "WEB_SEARCH_PROCESSOR_AGENT",
+        "check_validation"
+      ],
+      [
+        "analyze_input",
+        "apply_guardrails"
+      ],
+      [
+        "analyze_input",
+        "route_to_agent"
+      ],
+      [
+        "check_validation",
+        "apply_guardrails"
+      ],
+      [
+        "check_validation",
+        "human_validation"
+      ],
+      [
+        "human_validation",
+        "apply_guardrails"
+      ],
+      [
+        "route_to_agent",
+        "BRAIN_TUMOR_AGENT"
+      ],
+      [
+        "route_to_agent",
+        "CHEST_XRAY_AGENT"
+      ],
+      [
+        "route_to_agent",
+        "CONVERSATION_AGENT"
+      ],
+      [
+        "route_to_agent",
+        "RAG_AGENT"
+      ],
+      [
+        "route_to_agent",
+        "SKIN_LESION_AGENT"
+      ],
+      [
+        "route_to_agent",
+        "WEB_SEARCH_PROCESSOR_AGENT"
+      ]
+    ]
+  },
+  {
+    "repo": "swe-agent.git",
+    "file": "agent/developer/graph.py",
+    "nodes": [
+      "creating_diffs_for_task",
+      "get_clear_implementation_plan_for_atomic_task",
+      "prepare_for_implementation",
+      "proceed_to_next_atomic_task",
+      "research_tool_node",
+      "start_implementing"
+    ],
+    "edges": [
+      [
+        "creating_diffs_for_task",
+        "proceed_to_next_atomic_task"
+      ],
+      [
+        "get_clear_implementation_plan_for_atomic_task",
+        "creating_diffs_for_task"
+      ],
+      [
+        "get_clear_implementation_plan_for_atomic_task",
+        "research_tool_node"
+      ],
+      [
+        "prepare_for_implementation",
+        "get_clear_implementation_plan_for_atomic_task"
+      ],
+      [
+        "proceed_to_next_atomic_task",
+        "prepare_for_implementation"
+      ],
+      [
+        "research_tool_node",
+        "get_clear_implementation_plan_for_atomic_task"
+      ],
+      [
+        "start_implementing",
+        "prepare_for_implementation"
+      ]
+    ]
+  },
+  {
+    "repo": "swe-agent.git",
+    "file": "agent/architect/graph.py",
+    "nodes": [
+      "check_research_step",
+      "come_up_with_research_next_step",
+      "conduct_research",
+      "extract_implementation_plan",
+      "tools"
+    ],
+    "edges": [
+      [
+        "check_research_step",
+        "come_up_with_research_next_step"
+      ],
+      [
+        "check_research_step",
+        "conduct_research"
+      ],
+      [
+        "come_up_with_research_next_step",
+        "check_research_step"
+      ],
+      [
+        "conduct_research",
+        "extract_implementation_plan"
+      ],
+      [
+        "conduct_research",
+        "tools"
+      ],
+      [
+        "tools",
+        "conduct_research"
+      ]
+    ]
+  },
+  {
+    "repo": "GustoBot.git",
+    "file": "gustobot/application/agents/kg_sub_graph/agentic_rag_agents/workflows/multi_agent/text2cypher_with_viz_and_follow_ups.py",
+    "nodes": [
+      "final_answer",
+      "gather_cypher",
+      "gather_visualizations",
+      "guardrails",
+      "planner",
+      "summarize",
+      "text2cypher",
+      "validate_final_answer",
+      "visualize"
+    ],
+    "edges": [
+      [
+        "gather_cypher",
+        "gather_visualizations"
+      ],
+      [
+        "gather_cypher",
+        "visualize"
+      ],
+      [
+        "gather_visualizations",
+        "summarize"
+      ],
+      [
+        "planner",
+        "text2cypher"
+      ],
+      [
+        "summarize",
+        "validate_final_answer"
+      ],
+      [
+        "text2cypher",
+        "gather_cypher"
+      ],
+      [
+        "validate_final_answer",
+        "final_answer"
+      ],
+      [
+        "validate_final_answer",
+        "text2cypher"
+      ],
+      [
+        "visualize",
+        "gather_visualizations"
+      ]
+    ]
+  },
+  {
+    "repo": "GustoBot.git",
+    "file": "gustobot/application/agents/kg_sub_graph/agentic_rag_agents/workflows/multi_agent/multi_tool.py",
+    "nodes": [
+      "customer_tools",
+      "cypher_query",
+      "external_search",
+      "final_answer",
+      "finalize",
+      "guardrails",
+      "kb_router",
+      "local_search",
+      "planner",
+      "predefined_cypher",
+      "summarize",
+      "text2sql_query",
+      "tool_selection"
+    ],
+    "edges": [
+      [
+        "customer_tools",
+        "summarize"
+      ],
+      [
+        "cypher_query",
+        "summarize"
+      ],
+      [
+        "external_search",
+        "finalize"
+      ],
+      [
+        "planner",
+        "tool_selection"
+      ],
+      [
+        "predefined_cypher",
+        "summarize"
+      ],
+      [
+        "summarize",
+        "final_answer"
+      ],
+      [
+        "text2sql_query",
+        "summarize"
+      ]
+    ]
+  },
+  {
+    "repo": "GustoBot.git",
+    "file": "gustobot/application/agents/kg_sub_graph/agentic_rag_agents/workflows/single_agent/visualization.py",
+    "nodes": [
+      "correct_chart_details",
+      "generate_chart",
+      "generate_chart_details",
+      "validate_chart_details"
+    ],
+    "edges": [
+      [
+        "correct_chart_details",
+        "validate_chart_details"
+      ],
+      [
+        "generate_chart_details",
+        "validate_chart_details"
+      ]
+    ]
+  },
+  {
+    "repo": "GustoBot.git",
+    "file": "gustobot/application/agents/text2sql/workflow.py",
+    "nodes": [
+      "analyze_query",
+      "execute_sql",
+      "format_answer_node",
+      "generate_sql",
+      "retrieve_schema",
+      "validate_sql",
+      "visualization_node"
+    ],
+    "edges": [
+      [
+        "analyze_query",
+        "generate_sql"
+      ],
+      [
+        "execute_sql",
+        "visualization_node"
+      ],
+      [
+        "generate_sql",
+        "validate_sql"
+      ],
+      [
+        "retrieve_schema",
+        "analyze_query"
+      ],
+      [
+        "validate_sql",
+        "execute_sql"
+      ],
+      [
+        "validate_sql",
+        "format_answer_node"
+      ],
+      [
+        "validate_sql",
+        "generate_sql"
+      ],
+      [
+        "visualization_node",
+        "format_answer_node"
+      ]
+    ]
+  },
+  {
+    "repo": "mentis.git",
+    "file": "super_agents/customized_deep_research/reason_graph/graph.py",
+    "nodes": [
+      "analyze_gaps",
+      "execute_gap_search",
+      "execute_search",
+      "fetch_financial_data",
+      "finalize_basic_research",
+      "generate_final_markdown_report",
+      "initialize_research",
+      "perform_analysis",
+      "plan_research",
+      "prepare_steps",
+      "synthesize_final_report"
+    ],
+    "edges": [
+      [
+        "analyze_gaps",
+        "execute_gap_search"
+      ],
+      [
+        "analyze_gaps",
+        "synthesize_final_report"
+      ],
+      [
+        "execute_gap_search",
+        "synthesize_final_report"
+      ],
+      [
+        "execute_search",
+        "analyze_gaps"
+      ],
+      [
+        "execute_search",
+        "perform_analysis"
+      ],
+      [
+        "fetch_financial_data",
+        "execute_search"
+      ],
+      [
+        "initialize_research",
+        "finalize_basic_research"
+      ],
+      [
+        "initialize_research",
+        "plan_research"
+      ],
+      [
+        "perform_analysis",
+        "analyze_gaps"
+      ],
+      [
+        "plan_research",
+        "finalize_basic_research"
+      ],
+      [
+        "plan_research",
+        "prepare_steps"
+      ],
+      [
+        "prepare_steps",
+        "fetch_financial_data"
+      ],
+      [
+        "synthesize_final_report",
+        "finalize_basic_research"
+      ],
+      [
+        "synthesize_final_report",
+        "generate_final_markdown_report"
+      ]
+    ]
+  },
+  {
+    "repo": "mentis.git",
+    "file": "super_agents/deep_research/reason_graph/graph.py",
+    "nodes": [
+      "analyze_gaps",
+      "execute_gap_search",
+      "execute_search",
+      "finalize_basic_research",
+      "generate_final_markdown_report",
+      "perform_analysis",
+      "plan_research",
+      "prepare_steps",
+      "synthesize_final_report"
+    ],
+    "edges": [
+      [
+        "analyze_gaps",
+        "execute_gap_search"
+      ],
+      [
+        "analyze_gaps",
+        "finalize_basic_research"
+      ],
+      [
+        "analyze_gaps",
+        "synthesize_final_report"
+      ],
+      [
+        "execute_gap_search",
+        "finalize_basic_research"
+      ],
+      [
+        "execute_gap_search",
+        "synthesize_final_report"
+      ],
+      [
+        "execute_search",
+        "analyze_gaps"
+      ],
+      [
+        "execute_search",
+        "perform_analysis"
+      ],
+      [
+        "perform_analysis",
+        "analyze_gaps"
+      ],
+      [
+        "plan_research",
+        "prepare_steps"
+      ],
+      [
+        "prepare_steps",
+        "execute_search"
+      ],
+      [
+        "synthesize_final_report",
+        "generate_final_markdown_report"
+      ]
+    ]
+  },
+  {
+    "repo": "langgraph-email-automation.git",
+    "file": "src/graph.py",
+    "nodes": [
+      "categorize_email",
+      "construct_rag_queries",
+      "email_proofreader",
+      "email_writer",
+      "is_email_inbox_empty",
+      "load_inbox_emails",
+      "retrieve_from_rag",
+      "send_email",
+      "skip_unrelated_email"
+    ],
+    "edges": [
+      [
+        "categorize_email",
+        "construct_rag_queries"
+      ],
+      [
+        "categorize_email",
+        "email_writer"
+      ],
+      [
+        "categorize_email",
+        "skip_unrelated_email"
+      ],
+      [
+        "construct_rag_queries",
+        "retrieve_from_rag"
+      ],
+      [
+        "email_proofreader",
+        "categorize_email"
+      ],
+      [
+        "email_proofreader",
+        "email_writer"
+      ],
+      [
+        "email_proofreader",
+        "send_email"
+      ],
+      [
+        "email_writer",
+        "email_proofreader"
+      ],
+      [
+        "is_email_inbox_empty",
+        "categorize_email"
+      ],
+      [
+        "load_inbox_emails",
+        "is_email_inbox_empty"
+      ],
+      [
+        "retrieve_from_rag",
+        "email_writer"
+      ],
+      [
+        "send_email",
+        "is_email_inbox_empty"
+      ],
+      [
+        "skip_unrelated_email",
+        "is_email_inbox_empty"
+      ]
+    ]
+  },
+  {
+    "repo": "langgraph_multi-agent-rag-customer-support.git",
+    "file": "customer_support_chat/app/graph.py",
+    "nodes": [
+      "blog_search",
+      "blog_search_safe_tools",
+      "book_car_rental",
+      "book_car_rental_safe_tools",
+      "book_car_rental_sensitive_tools",
+      "book_excursion",
+      "book_excursion_safe_tools",
+      "book_excursion_sensitive_tools",
+      "book_hotel",
+      "book_hotel_safe_tools",
+      "book_hotel_sensitive_tools",
+      "enter_blog_search",
+      "enter_book_car_rental",
+      "enter_book_excursion",
+      "enter_book_hotel",
+      "enter_form_submission",
+      "enter_update_flight",
+      "enter_woocommerce",
+      "fetch_user_info",
+      "form_submission",
+      "form_submission_safe_tools",
+      "guardrail_check",
+      "primary_assistant",
+      "primary_assistant_tools",
+      "update_flight",
+      "update_flight_safe_tools",
+      "update_flight_sensitive_tools",
+      "woocommerce",
+      "woocommerce_safe_tools"
+    ],
+    "edges": [
+      [
+        "enter_blog_search",
+        "blog_search"
+      ],
+      [
+        "enter_book_car_rental",
+        "book_car_rental"
+      ],
+      [
+        "enter_book_excursion",
+        "book_excursion"
+      ],
+      [
+        "enter_book_hotel",
+        "book_hotel"
+      ],
+      [
+        "enter_form_submission",
+        "form_submission"
+      ],
+      [
+        "enter_update_flight",
+        "update_flight"
+      ],
+      [
+        "enter_woocommerce",
+        "woocommerce"
+      ],
+      [
+        "fetch_user_info",
+        "guardrail_check"
+      ],
+      [
+        "fetch_user_info",
+        "primary_assistant"
+      ],
+      [
+        "guardrail_check",
+        "primary_assistant"
+      ],
+      [
+        "primary_assistant",
+        "enter_blog_search"
+      ],
+      [
+        "primary_assistant",
+        "enter_book_car_rental"
+      ],
+      [
+        "primary_assistant",
+        "enter_book_excursion"
+      ],
+      [
+        "primary_assistant",
+        "enter_book_hotel"
+      ],
+      [
+        "primary_assistant",
+        "enter_form_submission"
+      ],
+      [
+        "primary_assistant",
+        "enter_update_flight"
+      ],
+      [
+        "primary_assistant",
+        "enter_woocommerce"
+      ],
+      [
+        "primary_assistant",
+        "primary_assistant_tools"
+      ],
+      [
+        "primary_assistant_tools",
+        "primary_assistant"
+      ]
+    ]
+  },
+  {
+    "repo": "AlpacaTradingAgent.git",
+    "file": "tradingagents/graph/setup.py",
+    "nodes": [
+      "Bear Researcher",
+      "Build Report Context",
+      "Bull Researcher",
+      "Neutral Analyst",
+      "Parallel Analysts",
+      "Parallel Risk Round 1",
+      "Research Manager",
+      "Risk Judge",
+      "Risky Analyst",
+      "Safe Analyst",
+      "Trader"
+    ],
+    "edges": [
+      [
+        "Bear Researcher",
+        "Bull Researcher"
+      ],
+      [
+        "Bear Researcher",
+        "Research Manager"
+      ],
+      [
+        "Build Report Context",
+        "Bull Researcher"
+      ],
+      [
+        "Bull Researcher",
+        "Bear Researcher"
+      ],
+      [
+        "Bull Researcher",
+        "Research Manager"
+      ],
+      [
+        "Neutral Analyst",
+        "Risk Judge"
+      ],
+      [
+        "Neutral Analyst",
+        "Risky Analyst"
+      ],
+      [
+        "Parallel Analysts",
+        "Build Report Context"
+      ],
+      [
+        "Parallel Risk Round 1",
+        "Neutral Analyst"
+      ],
+      [
+        "Parallel Risk Round 1",
+        "Risk Judge"
+      ],
+      [
+        "Parallel Risk Round 1",
+        "Risky Analyst"
+      ],
+      [
+        "Parallel Risk Round 1",
+        "Safe Analyst"
+      ],
+      [
+        "Research Manager",
+        "Trader"
+      ],
+      [
+        "Risky Analyst",
+        "Risk Judge"
+      ],
+      [
+        "Risky Analyst",
+        "Safe Analyst"
+      ],
+      [
+        "Safe Analyst",
+        "Neutral Analyst"
+      ],
+      [
+        "Safe Analyst",
+        "Risk Judge"
+      ],
+      [
+        "Trader",
+        "Parallel Risk Round 1"
+      ],
+      [
+        "Trader",
+        "Risky Analyst"
+      ]
+    ]
+  },
+  {
+    "repo": "MultiAgenticRAG.git",
+    "file": "main_graph/graph_builder.py",
+    "nodes": [
+      "analyze_and_route_query",
+      "check_hallucinations",
+      "conduct_research",
+      "create_research_plan",
+      "respond"
+    ],
+    "edges": [
+      [
+        "check_hallucinations",
+        "respond"
+      ],
+      [
+        "create_research_plan",
+        "conduct_research"
+      ],
+      [
+        "respond",
+        "check_hallucinations"
+      ]
+    ]
+  },
+  {
+    "repo": "readwren.git",
+    "file": "src/agents/interview_agent.py",
+    "nodes": [
+      "analyze",
+      "generate_profile",
+      "generate_question"
+    ],
+    "edges": [
+      [
+        "analyze",
+        "generate_profile"
+      ],
+      [
+        "analyze",
+        "generate_question"
+      ]
+    ]
+  },
+  {
+    "repo": "deep-research-agent.git",
+    "file": "src/graph.py",
+    "nodes": [
+      "plan",
+      "search",
+      "synthesize",
+      "write_report"
+    ],
+    "edges": [
+      [
+        "plan",
+        "search"
+      ],
+      [
+        "search",
+        "synthesize"
+      ],
+      [
+        "synthesize",
+        "write_report"
+      ]
+    ]
+  },
+  {
+    "repo": "manufacturing-agents.git",
+    "file": "manufacturingagents/graph/setup.py",
+    "nodes": [
+      "Bear Researcher",
+      "Bull Researcher",
+      "Neutral Analyst",
+      "Research Manager",
+      "Risk Judge",
+      "Risky Analyst",
+      "Safe Analyst",
+      "Trader"
+    ],
+    "edges": [
+      [
+        "Bear Researcher",
+        "Bull Researcher"
+      ],
+      [
+        "Bear Researcher",
+        "Research Manager"
+      ],
+      [
+        "Bull Researcher",
+        "Bear Researcher"
+      ],
+      [
+        "Bull Researcher",
+        "Research Manager"
+      ],
+      [
+        "Neutral Analyst",
+        "Risk Judge"
+      ],
+      [
+        "Neutral Analyst",
+        "Risky Analyst"
+      ],
+      [
+        "Research Manager",
+        "Trader"
+      ],
+      [
+        "Risky Analyst",
+        "Risk Judge"
+      ],
+      [
+        "Risky Analyst",
+        "Safe Analyst"
+      ],
+      [
+        "Safe Analyst",
+        "Neutral Analyst"
+      ],
+      [
+        "Safe Analyst",
+        "Risk Judge"
+      ],
+      [
+        "Trader",
+        "Risky Analyst"
+      ]
+    ]
+  },
+  {
+    "repo": "manufacturing-agents.git",
+    "file": "manufacturingagents/manufacturingagents/graph/manufacturing_graph_react.py",
+    "nodes": [
+      "Cautious_Advisor",
+      "Conclusion_Extractor",
+      "Decision_Coordinator",
+      "Market_Environment_Analyst",
+      "Optimistic_Advisor",
+      "Risk_Assessment"
+    ],
+    "edges": [
+      [
+        "Cautious_Advisor",
+        "Decision_Coordinator"
+      ],
+      [
+        "Cautious_Advisor",
+        "Optimistic_Advisor"
+      ],
+      [
+        "Decision_Coordinator",
+        "Risk_Assessment"
+      ],
+      [
+        "Optimistic_Advisor",
+        "Cautious_Advisor"
+      ],
+      [
+        "Optimistic_Advisor",
+        "Decision_Coordinator"
+      ],
+      [
+        "Risk_Assessment",
+        "Conclusion_Extractor"
+      ]
+    ]
+  },
+  {
+    "repo": "openarg_backend.git",
+    "file": "src/app/application/pipeline/graph.py",
+    "nodes": [
+      "analyst",
+      "cache_check",
+      "cache_reply",
+      "clarify_reply",
+      "classify",
+      "coordinator",
+      "execute_steps",
+      "fast_reply",
+      "finalize",
+      "inject_fallbacks",
+      "load_memory",
+      "planner",
+      "policy",
+      "preprocess",
+      "replan",
+      "skill_resolver"
+    ],
+    "edges": [
+      [
+        "analyst",
+        "coordinator"
+      ],
+      [
+        "cache_check",
+        "cache_reply"
+      ],
+      [
+        "cache_check",
+        "load_memory"
+      ],
+      [
+        "classify",
+        "cache_check"
+      ],
+      [
+        "classify",
+        "fast_reply"
+      ],
+      [
+        "coordinator",
+        "finalize"
+      ],
+      [
+        "coordinator",
+        "policy"
+      ],
+      [
+        "coordinator",
+        "replan"
+      ],
+      [
+        "execute_steps",
+        "analyst"
+      ],
+      [
+        "inject_fallbacks",
+        "execute_steps"
+      ],
+      [
+        "load_memory",
+        "preprocess"
+      ],
+      [
+        "planner",
+        "clarify_reply"
+      ],
+      [
+        "planner",
+        "inject_fallbacks"
+      ],
+      [
+        "policy",
+        "finalize"
+      ],
+      [
+        "preprocess",
+        "skill_resolver"
+      ],
+      [
+        "replan",
+        "execute_steps"
+      ],
+      [
+        "skill_resolver",
+        "planner"
+      ]
+    ]
+  },
+  {
+    "repo": "openarg_backend.git",
+    "file": "src/app/application/pipeline/subgraphs/nl2sql.py",
+    "nodes": [
+      "execute_sql",
+      "fix_sql",
+      "format_result",
+      "generate_sql",
+      "indec_fallback",
+      "last_resort",
+      "save_success"
+    ],
+    "edges": [
+      [
+        "execute_sql",
+        "fix_sql"
+      ],
+      [
+        "execute_sql",
+        "format_result"
+      ],
+      [
+        "execute_sql",
+        "last_resort"
+      ],
+      [
+        "fix_sql",
+        "execute_sql"
+      ],
+      [
+        "format_result",
+        "indec_fallback"
+      ],
+      [
+        "format_result",
+        "save_success"
+      ],
+      [
+        "generate_sql",
+        "execute_sql"
+      ],
+      [
+        "last_resort",
+        "format_result"
+      ]
+    ]
+  },
+  {
+    "repo": "multi-agent-rag-customer-support.git",
+    "file": "customer_support_chat/app/graph.py",
+    "nodes": [
+      "book_car_rental",
+      "book_car_rental_safe_tools",
+      "book_car_rental_sensitive_tools",
+      "book_excursion",
+      "book_excursion_safe_tools",
+      "book_excursion_sensitive_tools",
+      "book_hotel",
+      "book_hotel_safe_tools",
+      "book_hotel_sensitive_tools",
+      "enter_book_car_rental",
+      "enter_book_excursion",
+      "enter_book_hotel",
+      "enter_update_flight",
+      "fetch_user_info",
+      "primary_assistant",
+      "primary_assistant_tools",
+      "update_flight",
+      "update_flight_safe_tools",
+      "update_flight_sensitive_tools"
+    ],
+    "edges": [
+      [
+        "book_car_rental_safe_tools",
+        "book_car_rental"
+      ],
+      [
+        "book_car_rental_sensitive_tools",
+        "book_car_rental"
+      ],
+      [
+        "book_excursion_safe_tools",
+        "book_excursion"
+      ],
+      [
+        "book_excursion_sensitive_tools",
+        "book_excursion"
+      ],
+      [
+        "book_hotel_safe_tools",
+        "book_hotel"
+      ],
+      [
+        "book_hotel_sensitive_tools",
+        "book_hotel"
+      ],
+      [
+        "enter_book_car_rental",
+        "book_car_rental"
+      ],
+      [
+        "enter_book_excursion",
+        "book_excursion"
+      ],
+      [
+        "enter_book_hotel",
+        "book_hotel"
+      ],
+      [
+        "enter_update_flight",
+        "update_flight"
+      ],
+      [
+        "fetch_user_info",
+        "primary_assistant"
+      ],
+      [
+        "primary_assistant",
+        "enter_book_car_rental"
+      ],
+      [
+        "primary_assistant",
+        "enter_book_excursion"
+      ],
+      [
+        "primary_assistant",
+        "enter_book_hotel"
+      ],
+      [
+        "primary_assistant",
+        "enter_update_flight"
+      ],
+      [
+        "primary_assistant",
+        "primary_assistant_tools"
+      ],
+      [
+        "primary_assistant_tools",
+        "primary_assistant"
+      ],
+      [
+        "update_flight_safe_tools",
+        "update_flight"
+      ],
+      [
+        "update_flight_sensitive_tools",
+        "update_flight"
+      ]
+    ]
+  },
+  {
+    "repo": "Astro_Agent.git",
+    "file": "Astro_Agent/analysis_agent/workflow.py",
+    "nodes": [
+      "abnormal_report",
+      "ads_live",
+      "claude_code_delegate",
+      "cluster_membership",
+      "comparison_table",
+      "data_fetcher",
+      "drafter",
+      "eclipse_mcmc",
+      "extinction",
+      "figure_synthesizer",
+      "iteration_1_baseline",
+      "iteration_2_residuals",
+      "iteration_3_systematics",
+      "kg_graph_report",
+      "kg_navigator",
+      "kg_writeback",
+      "latex_compile",
+      "light_curve_geometry",
+      "memory_advisor",
+      "method_scout",
+      "model_supervisor",
+      "novelty_detector",
+      "paper_qc",
+      "peer_reviewer",
+      "physics_checks",
+      "qa_gate",
+      "rag_navigator",
+      "reflexion",
+      "resolve",
+      "sed_decoupled",
+      "source_research_package",
+      "structural_lint",
+      "structure_planner",
+      "toolbox_evolution"
+    ],
+    "edges": [
+      [
+        "abnormal_report",
+        "kg_writeback"
+      ],
+      [
+        "ads_live",
+        "novelty_detector"
+      ],
+      [
+        "claude_code_delegate",
+        "qa_gate"
+      ],
+      [
+        "cluster_membership",
+        "extinction"
+      ],
+      [
+        "comparison_table",
+        "rag_navigator"
+      ],
+      [
+        "data_fetcher",
+        "memory_advisor"
+      ],
+      [
+        "drafter",
+        "figure_synthesizer"
+      ],
+      [
+        "eclipse_mcmc",
+        "physics_checks"
+      ],
+      [
+        "extinction",
+        "sed_decoupled"
+      ],
+      [
+        "figure_synthesizer",
+        "latex_compile"
+      ],
+      [
+        "iteration_1_baseline",
+        "iteration_2_residuals"
+      ],
+      [
+        "iteration_2_residuals",
+        "iteration_3_systematics"
+      ],
+      [
+        "iteration_3_systematics",
+        "model_supervisor"
+      ],
+      [
+        "kg_graph_report",
+        "source_research_package"
+      ],
+      [
+        "kg_navigator",
+        "method_scout"
+      ],
+      [
+        "kg_writeback",
+        "toolbox_evolution"
+      ],
+      [
+        "latex_compile",
+        "structural_lint"
+      ],
+      [
+        "light_curve_geometry",
+        "eclipse_mcmc"
+      ],
+      [
+        "memory_advisor",
+        "structure_planner"
+      ],
+      [
+        "method_scout",
+        "kg_graph_report"
+      ],
+      [
+        "model_supervisor",
+        "claude_code_delegate"
+      ],
+      [
+        "novelty_detector",
+        "comparison_table"
+      ],
+      [
+        "paper_qc",
+        "reflexion"
+      ],
+      [
+        "peer_reviewer",
+        "kg_writeback"
+      ],
+      [
+        "physics_checks",
+        "ads_live"
+      ],
+      [
+        "qa_gate",
+        "abnormal_report"
+      ],
+      [
+        "qa_gate",
+        "drafter"
+      ],
+      [
+        "qa_gate",
+        "structure_planner"
+      ],
+      [
+        "rag_navigator",
+        "kg_navigator"
+      ],
+      [
+        "reflexion",
+        "drafter"
+      ],
+      [
+        "reflexion",
+        "peer_reviewer"
+      ],
+      [
+        "resolve",
+        "data_fetcher"
+      ],
+      [
+        "sed_decoupled",
+        "light_curve_geometry"
+      ],
+      [
+        "source_research_package",
+        "iteration_1_baseline"
+      ],
+      [
+        "structural_lint",
+        "paper_qc"
+      ],
+      [
+        "structure_planner",
+        "cluster_membership"
+      ]
+    ]
+  },
+  {
+    "repo": "AssemblyZero.git",
+    "file": "assemblyzero/workflows/death/hourglass.py",
+    "nodes": [
+      "archive",
+      "chronicle",
+      "complete",
+      "harvest",
+      "init",
+      "rest",
+      "walk_field"
+    ],
+    "edges": [
+      [
+        "archive",
+        "chronicle"
+      ],
+      [
+        "chronicle",
+        "rest"
+      ],
+      [
+        "harvest",
+        "archive"
+      ],
+      [
+        "harvest",
+        "complete"
+      ],
+      [
+        "init",
+        "walk_field"
+      ],
+      [
+        "rest",
+        "complete"
+      ],
+      [
+        "walk_field",
+        "harvest"
+      ]
+    ]
+  },
+  {
+    "repo": "AssemblyZero.git",
+    "file": "assemblyzero/workflows/testing/graph.py",
+    "nodes": [
+      "HALT",
+      "N0_load_lld",
+      "N1_5_revise_test_plan",
+      "N1_review_test_plan",
+      "N2_5_validate_tests",
+      "N2_scaffold_tests",
+      "N3_verify_red",
+      "N4_implement_code",
+      "N4b_completeness_gate",
+      "N5_verify_green",
+      "N6_e2e_validation",
+      "N7_5_adversarial",
+      "N7_finalize",
+      "N8_document",
+      "N9_cleanup"
+    ],
+    "edges": [
+      [
+        "N0_load_lld",
+        "N1_review_test_plan"
+      ],
+      [
+        "N1_5_revise_test_plan",
+        "N1_review_test_plan"
+      ],
+      [
+        "N1_review_test_plan",
+        "N1_5_revise_test_plan"
+      ],
+      [
+        "N1_review_test_plan",
+        "N2_scaffold_tests"
+      ],
+      [
+        "N2_5_validate_tests",
+        "N2_scaffold_tests"
+      ],
+      [
+        "N2_5_validate_tests",
+        "N3_verify_red"
+      ],
+      [
+        "N2_5_validate_tests",
+        "N4_implement_code"
+      ],
+      [
+        "N2_scaffold_tests",
+        "N2_5_validate_tests"
+      ],
+      [
+        "N3_verify_red",
+        "N2_scaffold_tests"
+      ],
+      [
+        "N3_verify_red",
+        "N4_implement_code"
+      ],
+      [
+        "N4_implement_code",
+        "N4b_completeness_gate"
+      ],
+      [
+        "N4b_completeness_gate",
+        "N4_implement_code"
+      ],
+      [
+        "N4b_completeness_gate",
+        "N5_verify_green"
+      ],
+      [
+        "N5_verify_green",
+        "N2_scaffold_tests"
+      ],
+      [
+        "N5_verify_green",
+        "N4_implement_code"
+      ],
+      [
+        "N5_verify_green",
+        "N6_e2e_validation"
+      ],
+      [
+        "N5_verify_green",
+        "N7_finalize"
+      ],
+      [
+        "N6_e2e_validation",
+        "N4_implement_code"
+      ],
+      [
+        "N6_e2e_validation",
+        "N7_finalize"
+      ],
+      [
+        "N7_5_adversarial",
+        "N8_document"
+      ],
+      [
+        "N7_finalize",
+        "N7_5_adversarial"
+      ],
+      [
+        "N8_document",
+        "N9_cleanup"
+      ]
+    ]
+  },
+  {
+    "repo": "AssemblyZero.git",
+    "file": "assemblyzero/workflows/janitor/graph.py",
+    "nodes": [
+      "n0_sweeper",
+      "n1_fixer",
+      "n2_reporter"
+    ],
+    "edges": [
+      [
+        "n0_sweeper",
+        "n1_fixer"
+      ],
+      [
+        "n0_sweeper",
+        "n2_reporter"
+      ],
+      [
+        "n1_fixer",
+        "n2_reporter"
+      ]
+    ]
+  },
+  {
+    "repo": "AssemblyZero.git",
+    "file": "assemblyzero/workflows/orchestrator/graph.py",
+    "nodes": [
+      "done",
+      "init",
+      "run_stage",
+      "terminal"
+    ],
+    "edges": [
+      [
+        "init",
+        "run_stage"
+      ],
+      [
+        "run_stage",
+        "done"
+      ],
+      [
+        "run_stage",
+        "terminal"
+      ]
+    ]
+  },
+  {
+    "repo": "multi-agent-moderation.git",
+    "file": "src/multi_agent_moderation/chains/langgraph_orchestrator.py",
+    "nodes": [
+      "compliance",
+      "decide",
+      "quality",
+      "review"
+    ],
+    "edges": [
+      [
+        "compliance",
+        "review"
+      ],
+      [
+        "quality",
+        "compliance"
+      ],
+      [
+        "review",
+        "decide"
+      ]
+    ]
+  },
+  {
+    "repo": "Corvus.git",
+    "file": "backend/app/agent/graph.py",
+    "nodes": [
+      "executor",
+      "planner",
+      "post_tool",
+      "query_evaluation",
+      "replanner",
+      "supervisor_tools"
+    ],
+    "edges": [
+      [
+        "executor",
+        "supervisor_tools"
+      ],
+      [
+        "planner",
+        "executor"
+      ],
+      [
+        "post_tool",
+        "replanner"
+      ],
+      [
+        "query_evaluation",
+        "planner"
+      ],
+      [
+        "replanner",
+        "executor"
+      ],
+      [
+        "supervisor_tools",
+        "post_tool"
+      ]
+    ]
+  },
+  {
+    "repo": "Corvus.git",
+    "file": "backend/app/agent/paper_finder_fast.py",
+    "nodes": [
+      "rerank",
+      "search_agent",
+      "search_tool"
+    ],
+    "edges": [
+      [
+        "rerank",
+        "search_agent"
+      ],
+      [
+        "search_agent",
+        "search_tool"
+      ],
+      [
+        "search_tool",
+        "rerank"
+      ]
+    ]
+  },
+  {
+    "repo": "Corvus.git",
+    "file": "backend/app/agent/qa.py",
+    "nodes": [
+      "qa_answer",
+      "qa_evaluate",
+      "qa_retrieve",
+      "tools"
+    ],
+    "edges": [
+      [
+        "qa_evaluate",
+        "qa_answer"
+      ],
+      [
+        "qa_evaluate",
+        "qa_retrieve"
+      ],
+      [
+        "qa_retrieve",
+        "tools"
+      ],
+      [
+        "tools",
+        "qa_evaluate"
+      ]
+    ]
+  },
+  {
+    "repo": "Corvus.git",
+    "file": "backend/app/agent/paper_finder.py",
+    "nodes": [
+      "executor",
+      "planner",
+      "replan_agent",
+      "search_agent",
+      "search_tool"
+    ],
+    "edges": [
+      [
+        "executor",
+        "replan_agent"
+      ],
+      [
+        "planner",
+        "executor"
+      ],
+      [
+        "search_agent",
+        "search_tool"
+      ],
+      [
+        "search_tool",
+        "search_agent"
+      ]
+    ]
+  },
+  {
+    "repo": "medical-multi-agent-system.git",
+    "file": "python/src/graph/clinical_pipeline.py",
+    "nodes": [
+      "audit",
+      "coding",
+      "diagnosis",
+      "intake",
+      "treatment"
+    ],
+    "edges": [
+      [
+        "coding",
+        "audit"
+      ],
+      [
+        "diagnosis",
+        "intake"
+      ],
+      [
+        "diagnosis",
+        "treatment"
+      ],
+      [
+        "intake",
+        "diagnosis"
+      ],
+      [
+        "treatment",
+        "coding"
+      ]
+    ]
+  },
+  {
+    "repo": "langgraph-agentops-studio.git",
+    "file": "graph/builder.py",
+    "nodes": [
+      "analyst_agent",
+      "executor_agent",
+      "human_review",
+      "initialize_task",
+      "planner_agent",
+      "research_pipeline",
+      "reviewer_agent",
+      "supervisor"
+    ],
+    "edges": [
+      [
+        "analyst_agent",
+        "reviewer_agent"
+      ],
+      [
+        "executor_agent",
+        "supervisor"
+      ],
+      [
+        "initialize_task",
+        "planner_agent"
+      ],
+      [
+        "planner_agent",
+        "supervisor"
+      ],
+      [
+        "research_pipeline",
+        "supervisor"
+      ],
+      [
+        "supervisor",
+        "analyst_agent"
+      ],
+      [
+        "supervisor",
+        "executor_agent"
+      ],
+      [
+        "supervisor",
+        "human_review"
+      ],
+      [
+        "supervisor",
+        "research_pipeline"
+      ]
+    ]
+  },
+  {
+    "repo": "langgraph-agentops-studio.git",
+    "file": "graph/research_subgraph.py",
+    "nodes": [
+      "collect_research",
+      "parse_sources",
+      "parser_tools",
+      "rank_evidence",
+      "ranking_tools",
+      "research_briefing",
+      "research_tools"
+    ],
+    "edges": [
+      [
+        "parse_sources",
+        "parser_tools"
+      ],
+      [
+        "parser_tools",
+        "rank_evidence"
+      ],
+      [
+        "rank_evidence",
+        "ranking_tools"
+      ],
+      [
+        "ranking_tools",
+        "collect_research"
+      ],
+      [
+        "research_briefing",
+        "research_tools"
+      ],
+      [
+        "research_tools",
+        "parse_sources"
+      ]
+    ]
+  },
+  {
+    "repo": "zkzkAgent.git",
+    "file": "core/agent.py",
+    "nodes": [
+      "classify",
+      "conversational",
+      "execute",
+      "plan",
+      "tools"
+    ],
+    "edges": [
+      [
+        "classify",
+        "conversational"
+      ],
+      [
+        "classify",
+        "execute"
+      ],
+      [
+        "classify",
+        "plan"
+      ],
+      [
+        "execute",
+        "tools"
+      ],
+      [
+        "plan",
+        "execute"
+      ],
+      [
+        "tools",
+        "execute"
+      ]
+    ]
+  },
+  {
+    "repo": "Agentic-Cybersecurity-Pipeline.git",
+    "file": "agent_langgraph.py",
+    "nodes": [
+      "analyze_results",
+      "execute_task",
+      "generate_report",
+      "initialize_audit"
+    ],
+    "edges": [
+      [
+        "analyze_results",
+        "execute_task"
+      ],
+      [
+        "analyze_results",
+        "generate_report"
+      ],
+      [
+        "execute_task",
+        "analyze_results"
+      ],
+      [
+        "initialize_audit",
+        "execute_task"
+      ]
+    ]
+  },
+  {
+    "repo": "Agentic-Cybersecurity-Pipeline.git",
+    "file": "temp.py",
+    "nodes": [
+      "analyze_results",
+      "execute_task",
+      "generate_report",
+      "initialize_audit"
+    ],
+    "edges": [
+      [
+        "analyze_results",
+        "execute_task"
+      ],
+      [
+        "analyze_results",
+        "generate_report"
+      ],
+      [
+        "execute_task",
+        "analyze_results"
+      ],
+      [
+        "initialize_audit",
+        "execute_task"
+      ]
+    ]
+  },
+  {
+    "repo": "langchain-agentic-vision-rag.git",
+    "file": "langgraph_agent.py",
+    "nodes": [
+      "db1",
+      "db2",
+      "db3",
+      "db4",
+      "generate",
+      "history",
+      "router"
+    ],
+    "edges": [
+      [
+        "db1",
+        "db2"
+      ],
+      [
+        "db2",
+        "db3"
+      ],
+      [
+        "db3",
+        "db4"
+      ],
+      [
+        "db4",
+        "history"
+      ],
+      [
+        "history",
+        "generate"
+      ],
+      [
+        "router",
+        "db1"
+      ]
+    ]
+  },
+  {
+    "repo": "langgraph-multiagent.git",
+    "file": "src/agents/conversational.py",
+    "nodes": [
+      "answer_question",
+      "retrieve_context",
+      "update_memory"
+    ],
+    "edges": [
+      [
+        "answer_question",
+        "update_memory"
+      ],
+      [
+        "retrieve_context",
+        "answer_question"
+      ]
+    ]
+  },
+  {
+    "repo": "langgraph-multiagent.git",
+    "file": "src/agents/multi_tool.py",
+    "nodes": [
+      "calculator",
+      "direct",
+      "router",
+      "search",
+      "synthesizer"
+    ],
+    "edges": [
+      [
+        "calculator",
+        "synthesizer"
+      ],
+      [
+        "direct",
+        "synthesizer"
+      ],
+      [
+        "router",
+        "calculator"
+      ],
+      [
+        "router",
+        "direct"
+      ],
+      [
+        "router",
+        "search"
+      ],
+      [
+        "search",
+        "synthesizer"
+      ]
+    ]
+  },
+  {
+    "repo": "cartograph.git",
+    "file": "src/agent/graph.py",
+    "nodes": [
+      "evaluator",
+      "planner",
+      "searcher",
+      "synthesizer"
+    ],
+    "edges": [
+      [
+        "evaluator",
+        "searcher"
+      ],
+      [
+        "evaluator",
+        "synthesizer"
+      ],
+      [
+        "planner",
+        "searcher"
+      ],
+      [
+        "searcher",
+        "evaluator"
+      ]
+    ]
+  }
+]

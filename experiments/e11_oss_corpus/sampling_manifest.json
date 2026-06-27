@@ -1,0 +1,273 @@
+{
+  "retrieved_at_utc": "2026-06-22T03:25:35.088334+00:00",
+  "search_queries": [
+    "langgraph multi agent language:python",
+    "langgraph StateGraph agent language:python",
+    "langgraph supervisor agents language:python"
+  ],
+  "search_order": "stars descending, first 30 results per query",
+  "candidate_cap": 40,
+  "minimum_nodes": 3,
+  "excluded_path_parts": [
+    ".git",
+    ".venv",
+    "build",
+    "dist",
+    "example",
+    "examples",
+    "notebook",
+    "notebooks",
+    "test",
+    "tests",
+    "tutorial",
+    "tutorials"
+  ],
+  "extractable_calls": [
+    "add_node",
+    "add_edge",
+    "add_conditional_edges"
+  ],
+  "dynamic_endpoint_policy": "excluded; reported topology is a lower bound",
+  "repositories": [
+    {
+      "url": "https://github.com/assafelovic/gpt-researcher",
+      "repo": "gpt-researcher",
+      "commit": "b364917f55ea579c47e5ef3f038f7e56f51213df",
+      "graphs_kept": 2
+    },
+    {
+      "url": "https://github.com/langchain-ai/open_deep_research",
+      "repo": "open_deep_research",
+      "commit": "1f24f1142db24f81e29eb88751985a00ec8ed580",
+      "graphs_kept": 3
+    },
+    {
+      "url": "https://github.com/guy-hartstein/company-research-agent.git",
+      "repo": "company-research-agent.git",
+      "commit": "8497fa8e2d8f74214cea0177dd6cb63919aa7c6e",
+      "graphs_kept": 1
+    },
+    {
+      "url": "https://github.com/starpig1129/DATAGEN.git",
+      "repo": "DATAGEN.git",
+      "commit": "0e191ef5e0b3e7b689f5b82c1f116d5fd5ff2d76",
+      "graphs_kept": 1
+    },
+    {
+      "url": "https://github.com/langchain-ai/langgraph-swarm-py.git",
+      "repo": "langgraph-swarm-py.git",
+      "commit": "de22626e30844858b5eec1bb6d5a14008db8b773",
+      "graphs_kept": 0
+    },
+    {
+      "url": "https://github.com/souvikmajumder26/Multi-Agent-Medical-Assistant.git",
+      "repo": "Multi-Agent-Medical-Assistant.git",
+      "commit": "dee00a4df4d7142186c30bf2893406a0074faa51",
+      "graphs_kept": 1
+    },
+    {
+      "url": "https://github.com/langtalks/swe-agent.git",
+      "repo": "swe-agent.git",
+      "commit": "5946af4f57cba03761015837ad5f87ef5c8d99e9",
+      "graphs_kept": 2
+    },
+    {
+      "url": "https://github.com/skygazer42/GustoBot.git",
+      "repo": "GustoBot.git",
+      "commit": "3c50f2f96d632276df8b3fb290f19cba69bf2381",
+      "graphs_kept": 4
+    },
+    {
+      "url": "https://github.com/foreveryh/mentis.git",
+      "repo": "mentis.git",
+      "commit": "7859b536b98b236a2266aa8e866b4f0c33fcf0c5",
+      "graphs_kept": 2
+    },
+    {
+      "url": "https://github.com/GenseeAI/cognify.git",
+      "repo": "cognify.git",
+      "commit": "1d39763b22ea0afaddab8eb007b46cfa5ba806ba",
+      "graphs_kept": 0
+    },
+    {
+      "url": "https://github.com/kaymen99/langgraph-email-automation.git",
+      "repo": "langgraph-email-automation.git",
+      "commit": "9ea0f54cb30a493bbc25114cfc1769a25d45169a",
+      "graphs_kept": 1
+    },
+    {
+      "url": "https://github.com/bernatsampera/event-deep-research.git",
+      "repo": "event-deep-research.git",
+      "commit": "b5b82fcbddb874d9beee1bca29aea362589efbf2",
+      "graphs_kept": 0
+    },
+    {
+      "url": "https://github.com/liangdabiao/langgraph_multi-agent-rag-customer-support.git",
+      "repo": "langgraph_multi-agent-rag-customer-support.git",
+      "commit": "e9e541d21563c98c9eb9c9571ae662df9534672d",
+      "graphs_kept": 1
+    },
+    {
+      "url": "https://github.com/huygiatrng/AlpacaTradingAgent.git",
+      "repo": "AlpacaTradingAgent.git",
+      "commit": "1dcf29aaa8e75b51be6c2fd9de6b3598037905fe",
+      "graphs_kept": 1
+    },
+    {
+      "url": "https://github.com/nicoladisabato/MultiAgenticRAG.git",
+      "repo": "MultiAgenticRAG.git",
+      "commit": "05cc844d6cdf5451ba4d5e0d001faacd3651d1a8",
+      "graphs_kept": 1
+    },
+    {
+      "url": "https://github.com/muratcankoylan/readwren.git",
+      "repo": "readwren.git",
+      "commit": "3d0bfe481a340f247c749c082b7a65c877c12de1",
+      "graphs_kept": 1
+    },
+    {
+      "url": "https://github.com/tarun7r/deep-research-agent.git",
+      "repo": "deep-research-agent.git",
+      "commit": "a974b4cd03436d37d459170f2a524dace13d8482",
+      "graphs_kept": 1
+    },
+    {
+      "url": "https://github.com/YUHAO-corn/manufacturing-agents.git",
+      "repo": "manufacturing-agents.git",
+      "commit": "407bc6aa4f44566d6fcf4e334099a12d9c0b917a",
+      "graphs_kept": 2
+    },
+    {
+      "url": "https://github.com/colossus-lab/openarg_backend.git",
+      "repo": "openarg_backend.git",
+      "commit": "1e0d06d7ea7d02d182d67e01ef4bd88a60a59120",
+      "graphs_kept": 2
+    },
+    {
+      "url": "https://github.com/ro-anderson/multi-agent-rag-customer-support.git",
+      "repo": "multi-agent-rag-customer-support.git",
+      "commit": "86b17b603e0fd9d453203664134475d136f1c2ed",
+      "graphs_kept": 1
+    },
+    {
+      "url": "https://github.com/01-ai/langcrew.git",
+      "repo": "langcrew.git",
+      "commit": "ec782aaa4b71def6bbdc86ca4f215b1a63761300",
+      "graphs_kept": 0
+    },
+    {
+      "url": "https://github.com/lucasboscatti/Whatsapp-Langgraph-Agent-Integration.git",
+      "repo": "Whatsapp-Langgraph-Agent-Integration.git",
+      "commit": "10d307c96201e4a0fc88fbcedf5d9406fd7ac582",
+      "graphs_kept": 0
+    },
+    {
+      "url": "https://github.com/rooneyrulz/agentic-stock-research-system.git",
+      "repo": "agentic-stock-research-system.git",
+      "commit": "757e076425fac5a14495d5180980a59a185333f9",
+      "graphs_kept": 0
+    },
+    {
+      "url": "https://github.com/wangnengdejiamao/Astro_Agent.git",
+      "repo": "Astro_Agent.git",
+      "commit": "3224fa374b231073695ce55ed050573b658bd905",
+      "graphs_kept": 1
+    },
+    {
+      "url": "https://github.com/martymcenroe/AssemblyZero.git",
+      "repo": "AssemblyZero.git",
+      "commit": "7fcccbd7582093f408c36d4d673e9b0dec803948",
+      "graphs_kept": 4
+    },
+    {
+      "url": "https://github.com/panaversity/langgraph-agents-template.git",
+      "repo": "langgraph-agents-template.git",
+      "commit": "a7dde113eae95880977253ac4d9aacbc0ccf7a43",
+      "graphs_kept": 0
+    },
+    {
+      "url": "https://github.com/brucechou1983/chainlit_langgraph.git",
+      "repo": "chainlit_langgraph.git",
+      "commit": "7f5ab8a23e48505675d5e9836c9e689ad1a64ad8",
+      "graphs_kept": 0
+    },
+    {
+      "url": "https://github.com/zengzifan1/multi-agent-moderation.git",
+      "repo": "multi-agent-moderation.git",
+      "commit": "a7f2cad7fa18a61660d6601ae53f14d1f1588e71",
+      "graphs_kept": 1
+    },
+    {
+      "url": "https://github.com/YS0meone/Corvus.git",
+      "repo": "Corvus.git",
+      "commit": "7abcf9b96234e468b8ffdd0c3242a29d1c5715bd",
+      "graphs_kept": 4
+    },
+    {
+      "url": "https://github.com/bcefghj/medical-multi-agent-system.git",
+      "repo": "medical-multi-agent-system.git",
+      "commit": "09936ed696d8f5b1bd6a1cc0c1c9caf05d50f002",
+      "graphs_kept": 1
+    },
+    {
+      "url": "https://github.com/hyf020908/langgraph-agentops-studio.git",
+      "repo": "langgraph-agentops-studio.git",
+      "commit": "a21ced469819a96764fcb124c8cc626591a460e3",
+      "graphs_kept": 2
+    },
+    {
+      "url": "https://github.com/OpsinTech/opsintech-platform.git",
+      "repo": "opsintech-platform.git",
+      "commit": "fc8ab785605f14ada9370ad9351cf6f83222d534",
+      "graphs_kept": 0
+    },
+    {
+      "url": "https://github.com/10xHub/Agentflow.git",
+      "repo": "Agentflow.git",
+      "commit": "f68420e884a86476fc37360cceeef6a4477ff2eb",
+      "graphs_kept": 0
+    },
+    {
+      "url": "https://github.com/zkzkGamal/zkzkAgent.git",
+      "repo": "zkzkAgent.git",
+      "commit": "e473505aced3c1af7084aaf0befc6d45e8fdd9dc",
+      "graphs_kept": 1
+    },
+    {
+      "url": "https://github.com/AagamChhajer/Agentic-Cybersecurity-Pipeline.git",
+      "repo": "Agentic-Cybersecurity-Pipeline.git",
+      "commit": "e8014f529d523982ee2a1f077e5cab31737f9d21",
+      "graphs_kept": 2
+    },
+    {
+      "url": "https://github.com/MaazzAlii/langchain-agentic-vision-rag.git",
+      "repo": "langchain-agentic-vision-rag.git",
+      "commit": "8505f2eef28601196c1a748591d847761d8a95d2",
+      "graphs_kept": 1
+    },
+    {
+      "url": "https://github.com/venkateshP-12/rlm-langgraph.git",
+      "repo": "rlm-langgraph.git",
+      "commit": "646e1741e1d2a5970957e01198b3a2d42f61b2d4",
+      "graphs_kept": 0
+    },
+    {
+      "url": "https://github.com/SRV-YouSoRandom/rlm-langgraph.git",
+      "repo": "rlm-langgraph.git",
+      "commit": "646e1741e1d2a5970957e01198b3a2d42f61b2d4",
+      "graphs_kept": 0
+    },
+    {
+      "url": "https://github.com/SalmaOuardi/langgraph-multiagent.git",
+      "repo": "langgraph-multiagent.git",
+      "commit": "66575315d420b2c24cebe845a6b515d9aeb1d19a",
+      "graphs_kept": 2
+    },
+    {
+      "url": "https://github.com/surpradhan/cartograph.git",
+      "repo": "cartograph.git",
+      "commit": "617310b220d43d46f040b791dad0df2faddc8fa3",
+      "graphs_kept": 1
+    }
+  ]
+}

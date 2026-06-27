@@ -1,0 +1,60 @@
+{
+  "alternate_parent_cases": 2,
+  "alternate_parent_preserved_by_edge_target": 2,
+  "alternate_parent_wrongly_revoked_by_tree": 2,
+  "cross_domain_target_cases": 3,
+  "cross_domain_under_revoked_by_scoped": 3,
+  "experiment": "E18 cross-framework agent-shaped portability demo",
+  "frameworks": [
+    "autogen-shaped",
+    "crewai-shaped"
+  ],
+  "normalized_trace_path": "traces/normalized_events.jsonl",
+  "per_trace": [
+    {
+      "all_edge_cases": 5,
+      "alternate_parent_cases": 1,
+      "alternate_parent_preserved_by_edge_target": 1,
+      "alternate_parent_wrongly_revoked_by_tree": 1,
+      "cross_domain_edges": 4,
+      "cross_domain_target_cases": 2,
+      "cross_domain_under_revoked_by_scoped": 2,
+      "deployer_scoped_exact_cases": 3,
+      "edges": 5,
+      "framework": "autogen-shaped",
+      "input_cell": "shared-specialist",
+      "multiparent_agents": 1,
+      "nodes": 6,
+      "signed_delegation_events": 5,
+      "trace_id": "autogen-shared-specialist-r000",
+      "tree_exact_cases": 2,
+      "valid_signed_delegation_events": 5,
+      "workflow": "autogen-shared-specialist"
+    },
+    {
+      "all_edge_cases": 5,
+      "alternate_parent_cases": 1,
+      "alternate_parent_preserved_by_edge_target": 1,
+      "alternate_parent_wrongly_revoked_by_tree": 1,
+      "cross_domain_edges": 3,
+      "cross_domain_target_cases": 1,
+      "cross_domain_under_revoked_by_scoped": 1,
+      "deployer_scoped_exact_cases": 4,
+      "edges": 5,
+      "framework": "crewai-shaped",
+      "input_cell": "cross-org-procurement",
+      "multiparent_agents": 1,
+      "nodes": 6,
+      "signed_delegation_events": 5,
+      "trace_id": "crewai-cross-org-procurement-r000",
+      "tree_exact_cases": 1,
+      "valid_signed_delegation_events": 5,
+      "workflow": "crewai-cross-org-procurement"
+    }
+  ],
+  "purpose": "Show that AutoGen- and CrewAI-shaped task handoffs can emit the same normalized signed delegation schema used by E16; not a statistical prevalence study and not a production framework deployment.",
+  "raw_trace_path": "traces/cross_framework_raw.jsonl",
+  "signed_delegation_events": 10,
+  "trace_units": 2,
+  "valid_signed_delegation_events": 10
+}

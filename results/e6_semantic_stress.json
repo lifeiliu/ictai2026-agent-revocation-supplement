@@ -1,0 +1,1484 @@
+{
+  "batch_random": {
+    "estimand": "mean per-graph fraction of sampled 2-4 edge sets for which union(single targets) misses the batch target",
+    "independent_unit": "generated graph seed",
+    "graphs": 200,
+    "sampled_sets": 39991,
+    "mean_graph_failure_pct": 21.249450261780105,
+    "mean_graph_failure_pct_ci95": [
+      20.855,
+      21.651950261780105
+    ],
+    "mean_graph_missed_nodes": 0.24168128272251307,
+    "max_missed_nodes": 5,
+    "per_graph": [
+      {
+        "seed": 0,
+        "candidate_sets": 200,
+        "failure_fraction": 0.195,
+        "mean_missed": 0.225,
+        "max_missed": 2
+      },
+      {
+        "seed": 1,
+        "candidate_sets": 200,
+        "failure_fraction": 0.215,
+        "mean_missed": 0.26,
+        "max_missed": 2
+      },
+      {
+        "seed": 2,
+        "candidate_sets": 200,
+        "failure_fraction": 0.215,
+        "mean_missed": 0.235,
+        "max_missed": 3
+      },
+      {
+        "seed": 3,
+        "candidate_sets": 200,
+        "failure_fraction": 0.185,
+        "mean_missed": 0.235,
+        "max_missed": 4
+      },
+      {
+        "seed": 4,
+        "candidate_sets": 200,
+        "failure_fraction": 0.25,
+        "mean_missed": 0.29,
+        "max_missed": 4
+      },
+      {
+        "seed": 5,
+        "candidate_sets": 200,
+        "failure_fraction": 0.235,
+        "mean_missed": 0.295,
+        "max_missed": 3
+      },
+      {
+        "seed": 6,
+        "candidate_sets": 200,
+        "failure_fraction": 0.26,
+        "mean_missed": 0.305,
+        "max_missed": 4
+      },
+      {
+        "seed": 7,
+        "candidate_sets": 200,
+        "failure_fraction": 0.19,
+        "mean_missed": 0.205,
+        "max_missed": 2
+      },
+      {
+        "seed": 8,
+        "candidate_sets": 200,
+        "failure_fraction": 0.225,
+        "mean_missed": 0.28,
+        "max_missed": 3
+      },
+      {
+        "seed": 9,
+        "candidate_sets": 200,
+        "failure_fraction": 0.22,
+        "mean_missed": 0.23,
+        "max_missed": 2
+      },
+      {
+        "seed": 10,
+        "candidate_sets": 200,
+        "failure_fraction": 0.225,
+        "mean_missed": 0.245,
+        "max_missed": 3
+      },
+      {
+        "seed": 11,
+        "candidate_sets": 200,
+        "failure_fraction": 0.195,
+        "mean_missed": 0.215,
+        "max_missed": 3
+      },
+      {
+        "seed": 12,
+        "candidate_sets": 200,
+        "failure_fraction": 0.165,
+        "mean_missed": 0.205,
+        "max_missed": 3
+      },
+      {
+        "seed": 13,
+        "candidate_sets": 200,
+        "failure_fraction": 0.23,
+        "mean_missed": 0.285,
+        "max_missed": 5
+      },
+      {
+        "seed": 14,
+        "candidate_sets": 200,
+        "failure_fraction": 0.225,
+        "mean_missed": 0.24,
+        "max_missed": 2
+      },
+      {
+        "seed": 15,
+        "candidate_sets": 200,
+        "failure_fraction": 0.27,
+        "mean_missed": 0.285,
+        "max_missed": 2
+      },
+      {
+        "seed": 16,
+        "candidate_sets": 200,
+        "failure_fraction": 0.21,
+        "mean_missed": 0.215,
+        "max_missed": 2
+      },
+      {
+        "seed": 17,
+        "candidate_sets": 200,
+        "failure_fraction": 0.24,
+        "mean_missed": 0.3,
+        "max_missed": 3
+      },
+      {
+        "seed": 18,
+        "candidate_sets": 200,
+        "failure_fraction": 0.195,
+        "mean_missed": 0.22,
+        "max_missed": 3
+      },
+      {
+        "seed": 19,
+        "candidate_sets": 200,
+        "failure_fraction": 0.205,
+        "mean_missed": 0.215,
+        "max_missed": 2
+      },
+      {
+        "seed": 20,
+        "candidate_sets": 200,
+        "failure_fraction": 0.195,
+        "mean_missed": 0.23,
+        "max_missed": 3
+      },
+      {
+        "seed": 21,
+        "candidate_sets": 200,
+        "failure_fraction": 0.32,
+        "mean_missed": 0.355,
+        "max_missed": 4
+      },
+      {
+        "seed": 22,
+        "candidate_sets": 200,
+        "failure_fraction": 0.22,
+        "mean_missed": 0.265,
+        "max_missed": 3
+      },
+      {
+        "seed": 23,
+        "candidate_sets": 200,
+        "failure_fraction": 0.245,
+        "mean_missed": 0.28,
+        "max_missed": 3
+      },
+      {
+        "seed": 24,
+        "candidate_sets": 200,
+        "failure_fraction": 0.19,
+        "mean_missed": 0.205,
+        "max_missed": 2
+      },
+      {
+        "seed": 25,
+        "candidate_sets": 200,
+        "failure_fraction": 0.235,
+        "mean_missed": 0.285,
+        "max_missed": 5
+      },
+      {
+        "seed": 26,
+        "candidate_sets": 200,
+        "failure_fraction": 0.2,
+        "mean_missed": 0.255,
+        "max_missed": 3
+      },
+      {
+        "seed": 27,
+        "candidate_sets": 200,
+        "failure_fraction": 0.19,
+        "mean_missed": 0.205,
+        "max_missed": 2
+      },
+      {
+        "seed": 28,
+        "candidate_sets": 200,
+        "failure_fraction": 0.225,
+        "mean_missed": 0.24,
+        "max_missed": 3
+      },
+      {
+        "seed": 29,
+        "candidate_sets": 200,
+        "failure_fraction": 0.175,
+        "mean_missed": 0.2,
+        "max_missed": 3
+      },
+      {
+        "seed": 30,
+        "candidate_sets": 200,
+        "failure_fraction": 0.23,
+        "mean_missed": 0.245,
+        "max_missed": 2
+      },
+      {
+        "seed": 31,
+        "candidate_sets": 200,
+        "failure_fraction": 0.165,
+        "mean_missed": 0.2,
+        "max_missed": 3
+      },
+      {
+        "seed": 32,
+        "candidate_sets": 200,
+        "failure_fraction": 0.205,
+        "mean_missed": 0.23,
+        "max_missed": 3
+      },
+      {
+        "seed": 33,
+        "candidate_sets": 200,
+        "failure_fraction": 0.205,
+        "mean_missed": 0.245,
+        "max_missed": 4
+      },
+      {
+        "seed": 34,
+        "candidate_sets": 200,
+        "failure_fraction": 0.265,
+        "mean_missed": 0.295,
+        "max_missed": 2
+      },
+      {
+        "seed": 35,
+        "candidate_sets": 200,
+        "failure_fraction": 0.21,
+        "mean_missed": 0.235,
+        "max_missed": 3
+      },
+      {
+        "seed": 36,
+        "candidate_sets": 200,
+        "failure_fraction": 0.23,
+        "mean_missed": 0.255,
+        "max_missed": 3
+      },
+      {
+        "seed": 37,
+        "candidate_sets": 200,
+        "failure_fraction": 0.18,
+        "mean_missed": 0.21,
+        "max_missed": 3
+      },
+      {
+        "seed": 38,
+        "candidate_sets": 200,
+        "failure_fraction": 0.195,
+        "mean_missed": 0.225,
+        "max_missed": 2
+      },
+      {
+        "seed": 39,
+        "candidate_sets": 200,
+        "failure_fraction": 0.23,
+        "mean_missed": 0.26,
+        "max_missed": 2
+      },
+      {
+        "seed": 40,
+        "candidate_sets": 200,
+        "failure_fraction": 0.17,
+        "mean_missed": 0.21,
+        "max_missed": 5
+      },
+      {
+        "seed": 41,
+        "candidate_sets": 200,
+        "failure_fraction": 0.205,
+        "mean_missed": 0.225,
+        "max_missed": 2
+      },
+      {
+        "seed": 42,
+        "candidate_sets": 200,
+        "failure_fraction": 0.215,
+        "mean_missed": 0.25,
+        "max_missed": 4
+      },
+      {
+        "seed": 43,
+        "candidate_sets": 200,
+        "failure_fraction": 0.205,
+        "mean_missed": 0.24,
+        "max_missed": 3
+      },
+      {
+        "seed": 44,
+        "candidate_sets": 200,
+        "failure_fraction": 0.21,
+        "mean_missed": 0.245,
+        "max_missed": 4
+      },
+      {
+        "seed": 45,
+        "candidate_sets": 200,
+        "failure_fraction": 0.19,
+        "mean_missed": 0.2,
+        "max_missed": 2
+      },
+      {
+        "seed": 46,
+        "candidate_sets": 200,
+        "failure_fraction": 0.165,
+        "mean_missed": 0.185,
+        "max_missed": 2
+      },
+      {
+        "seed": 47,
+        "candidate_sets": 200,
+        "failure_fraction": 0.195,
+        "mean_missed": 0.205,
+        "max_missed": 2
+      },
+      {
+        "seed": 48,
+        "candidate_sets": 200,
+        "failure_fraction": 0.22,
+        "mean_missed": 0.26,
+        "max_missed": 5
+      },
+      {
+        "seed": 49,
+        "candidate_sets": 200,
+        "failure_fraction": 0.195,
+        "mean_missed": 0.25,
+        "max_missed": 5
+      },
+      {
+        "seed": 50,
+        "candidate_sets": 200,
+        "failure_fraction": 0.205,
+        "mean_missed": 0.23,
+        "max_missed": 3
+      },
+      {
+        "seed": 51,
+        "candidate_sets": 200,
+        "failure_fraction": 0.17,
+        "mean_missed": 0.19,
+        "max_missed": 3
+      },
+      {
+        "seed": 52,
+        "candidate_sets": 200,
+        "failure_fraction": 0.225,
+        "mean_missed": 0.23,
+        "max_missed": 2
+      },
+      {
+        "seed": 53,
+        "candidate_sets": 200,
+        "failure_fraction": 0.22,
+        "mean_missed": 0.24,
+        "max_missed": 2
+      },
+      {
+        "seed": 54,
+        "candidate_sets": 200,
+        "failure_fraction": 0.205,
+        "mean_missed": 0.23,
+        "max_missed": 2
+      },
+      {
+        "seed": 55,
+        "candidate_sets": 200,
+        "failure_fraction": 0.21,
+        "mean_missed": 0.26,
+        "max_missed": 4
+      },
+      {
+        "seed": 56,
+        "candidate_sets": 200,
+        "failure_fraction": 0.2,
+        "mean_missed": 0.24,
+        "max_missed": 3
+      },
+      {
+        "seed": 57,
+        "candidate_sets": 200,
+        "failure_fraction": 0.16,
+        "mean_missed": 0.17,
+        "max_missed": 2
+      },
+      {
+        "seed": 58,
+        "candidate_sets": 200,
+        "failure_fraction": 0.225,
+        "mean_missed": 0.255,
+        "max_missed": 3
+      },
+      {
+        "seed": 59,
+        "candidate_sets": 200,
+        "failure_fraction": 0.17,
+        "mean_missed": 0.2,
+        "max_missed": 3
+      },
+      {
+        "seed": 60,
+        "candidate_sets": 200,
+        "failure_fraction": 0.235,
+        "mean_missed": 0.245,
+        "max_missed": 2
+      },
+      {
+        "seed": 61,
+        "candidate_sets": 200,
+        "failure_fraction": 0.25,
+        "mean_missed": 0.26,
+        "max_missed": 2
+      },
+      {
+        "seed": 62,
+        "candidate_sets": 200,
+        "failure_fraction": 0.19,
+        "mean_missed": 0.225,
+        "max_missed": 3
+      },
+      {
+        "seed": 63,
+        "candidate_sets": 200,
+        "failure_fraction": 0.18,
+        "mean_missed": 0.195,
+        "max_missed": 2
+      },
+      {
+        "seed": 64,
+        "candidate_sets": 200,
+        "failure_fraction": 0.225,
+        "mean_missed": 0.26,
+        "max_missed": 3
+      },
+      {
+        "seed": 65,
+        "candidate_sets": 200,
+        "failure_fraction": 0.23,
+        "mean_missed": 0.255,
+        "max_missed": 2
+      },
+      {
+        "seed": 66,
+        "candidate_sets": 200,
+        "failure_fraction": 0.21,
+        "mean_missed": 0.26,
+        "max_missed": 3
+      },
+      {
+        "seed": 67,
+        "candidate_sets": 200,
+        "failure_fraction": 0.185,
+        "mean_missed": 0.2,
+        "max_missed": 3
+      },
+      {
+        "seed": 68,
+        "candidate_sets": 200,
+        "failure_fraction": 0.175,
+        "mean_missed": 0.21,
+        "max_missed": 3
+      },
+      {
+        "seed": 69,
+        "candidate_sets": 200,
+        "failure_fraction": 0.215,
+        "mean_missed": 0.255,
+        "max_missed": 2
+      },
+      {
+        "seed": 70,
+        "candidate_sets": 200,
+        "failure_fraction": 0.24,
+        "mean_missed": 0.275,
+        "max_missed": 3
+      },
+      {
+        "seed": 71,
+        "candidate_sets": 200,
+        "failure_fraction": 0.18,
+        "mean_missed": 0.195,
+        "max_missed": 2
+      },
+      {
+        "seed": 72,
+        "candidate_sets": 200,
+        "failure_fraction": 0.2,
+        "mean_missed": 0.235,
+        "max_missed": 3
+      },
+      {
+        "seed": 73,
+        "candidate_sets": 200,
+        "failure_fraction": 0.23,
+        "mean_missed": 0.26,
+        "max_missed": 2
+      },
+      {
+        "seed": 74,
+        "candidate_sets": 200,
+        "failure_fraction": 0.19,
+        "mean_missed": 0.21,
+        "max_missed": 2
+      },
+      {
+        "seed": 75,
+        "candidate_sets": 200,
+        "failure_fraction": 0.27,
+        "mean_missed": 0.31,
+        "max_missed": 3
+      },
+      {
+        "seed": 76,
+        "candidate_sets": 200,
+        "failure_fraction": 0.2,
+        "mean_missed": 0.245,
+        "max_missed": 2
+      },
+      {
+        "seed": 77,
+        "candidate_sets": 200,
+        "failure_fraction": 0.275,
+        "mean_missed": 0.315,
+        "max_missed": 3
+      },
+      {
+        "seed": 78,
+        "candidate_sets": 200,
+        "failure_fraction": 0.205,
+        "mean_missed": 0.225,
+        "max_missed": 3
+      },
+      {
+        "seed": 79,
+        "candidate_sets": 200,
+        "failure_fraction": 0.17,
+        "mean_missed": 0.195,
+        "max_missed": 2
+      },
+      {
+        "seed": 80,
+        "candidate_sets": 200,
+        "failure_fraction": 0.185,
+        "mean_missed": 0.195,
+        "max_missed": 2
+      },
+      {
+        "seed": 81,
+        "candidate_sets": 200,
+        "failure_fraction": 0.225,
+        "mean_missed": 0.25,
+        "max_missed": 3
+      },
+      {
+        "seed": 82,
+        "candidate_sets": 200,
+        "failure_fraction": 0.185,
+        "mean_missed": 0.205,
+        "max_missed": 2
+      },
+      {
+        "seed": 83,
+        "candidate_sets": 200,
+        "failure_fraction": 0.215,
+        "mean_missed": 0.24,
+        "max_missed": 4
+      },
+      {
+        "seed": 84,
+        "candidate_sets": 200,
+        "failure_fraction": 0.23,
+        "mean_missed": 0.26,
+        "max_missed": 2
+      },
+      {
+        "seed": 85,
+        "candidate_sets": 200,
+        "failure_fraction": 0.27,
+        "mean_missed": 0.29,
+        "max_missed": 2
+      },
+      {
+        "seed": 86,
+        "candidate_sets": 200,
+        "failure_fraction": 0.165,
+        "mean_missed": 0.215,
+        "max_missed": 3
+      },
+      {
+        "seed": 87,
+        "candidate_sets": 200,
+        "failure_fraction": 0.2,
+        "mean_missed": 0.215,
+        "max_missed": 2
+      },
+      {
+        "seed": 88,
+        "candidate_sets": 200,
+        "failure_fraction": 0.26,
+        "mean_missed": 0.305,
+        "max_missed": 3
+      },
+      {
+        "seed": 89,
+        "candidate_sets": 200,
+        "failure_fraction": 0.21,
+        "mean_missed": 0.245,
+        "max_missed": 3
+      },
+      {
+        "seed": 90,
+        "candidate_sets": 200,
+        "failure_fraction": 0.165,
+        "mean_missed": 0.175,
+        "max_missed": 2
+      },
+      {
+        "seed": 91,
+        "candidate_sets": 200,
+        "failure_fraction": 0.19,
+        "mean_missed": 0.245,
+        "max_missed": 3
+      },
+      {
+        "seed": 92,
+        "candidate_sets": 200,
+        "failure_fraction": 0.18,
+        "mean_missed": 0.195,
+        "max_missed": 2
+      },
+      {
+        "seed": 93,
+        "candidate_sets": 200,
+        "failure_fraction": 0.175,
+        "mean_missed": 0.205,
+        "max_missed": 3
+      },
+      {
+        "seed": 94,
+        "candidate_sets": 200,
+        "failure_fraction": 0.195,
+        "mean_missed": 0.225,
+        "max_missed": 2
+      },
+      {
+        "seed": 95,
+        "candidate_sets": 200,
+        "failure_fraction": 0.19,
+        "mean_missed": 0.215,
+        "max_missed": 2
+      },
+      {
+        "seed": 96,
+        "candidate_sets": 200,
+        "failure_fraction": 0.205,
+        "mean_missed": 0.22,
+        "max_missed": 2
+      },
+      {
+        "seed": 97,
+        "candidate_sets": 200,
+        "failure_fraction": 0.22,
+        "mean_missed": 0.25,
+        "max_missed": 2
+      },
+      {
+        "seed": 98,
+        "candidate_sets": 200,
+        "failure_fraction": 0.195,
+        "mean_missed": 0.245,
+        "max_missed": 5
+      },
+      {
+        "seed": 99,
+        "candidate_sets": 200,
+        "failure_fraction": 0.22,
+        "mean_missed": 0.235,
+        "max_missed": 3
+      },
+      {
+        "seed": 100,
+        "candidate_sets": 200,
+        "failure_fraction": 0.185,
+        "mean_missed": 0.215,
+        "max_missed": 2
+      },
+      {
+        "seed": 101,
+        "candidate_sets": 200,
+        "failure_fraction": 0.165,
+        "mean_missed": 0.19,
+        "max_missed": 4
+      },
+      {
+        "seed": 102,
+        "candidate_sets": 200,
+        "failure_fraction": 0.235,
+        "mean_missed": 0.29,
+        "max_missed": 4
+      },
+      {
+        "seed": 103,
+        "candidate_sets": 200,
+        "failure_fraction": 0.185,
+        "mean_missed": 0.2,
+        "max_missed": 2
+      },
+      {
+        "seed": 104,
+        "candidate_sets": 200,
+        "failure_fraction": 0.24,
+        "mean_missed": 0.255,
+        "max_missed": 2
+      },
+      {
+        "seed": 105,
+        "candidate_sets": 200,
+        "failure_fraction": 0.21,
+        "mean_missed": 0.22,
+        "max_missed": 2
+      },
+      {
+        "seed": 106,
+        "candidate_sets": 200,
+        "failure_fraction": 0.235,
+        "mean_missed": 0.285,
+        "max_missed": 5
+      },
+      {
+        "seed": 107,
+        "candidate_sets": 200,
+        "failure_fraction": 0.23,
+        "mean_missed": 0.265,
+        "max_missed": 3
+      },
+      {
+        "seed": 108,
+        "candidate_sets": 200,
+        "failure_fraction": 0.215,
+        "mean_missed": 0.26,
+        "max_missed": 3
+      },
+      {
+        "seed": 109,
+        "candidate_sets": 200,
+        "failure_fraction": 0.185,
+        "mean_missed": 0.23,
+        "max_missed": 3
+      },
+      {
+        "seed": 110,
+        "candidate_sets": 200,
+        "failure_fraction": 0.245,
+        "mean_missed": 0.27,
+        "max_missed": 2
+      },
+      {
+        "seed": 111,
+        "candidate_sets": 200,
+        "failure_fraction": 0.2,
+        "mean_missed": 0.22,
+        "max_missed": 2
+      },
+      {
+        "seed": 112,
+        "candidate_sets": 200,
+        "failure_fraction": 0.175,
+        "mean_missed": 0.205,
+        "max_missed": 3
+      },
+      {
+        "seed": 113,
+        "candidate_sets": 200,
+        "failure_fraction": 0.2,
+        "mean_missed": 0.24,
+        "max_missed": 2
+      },
+      {
+        "seed": 114,
+        "candidate_sets": 200,
+        "failure_fraction": 0.21,
+        "mean_missed": 0.235,
+        "max_missed": 3
+      },
+      {
+        "seed": 115,
+        "candidate_sets": 200,
+        "failure_fraction": 0.195,
+        "mean_missed": 0.215,
+        "max_missed": 2
+      },
+      {
+        "seed": 116,
+        "candidate_sets": 200,
+        "failure_fraction": 0.24,
+        "mean_missed": 0.27,
+        "max_missed": 3
+      },
+      {
+        "seed": 117,
+        "candidate_sets": 200,
+        "failure_fraction": 0.19,
+        "mean_missed": 0.22,
+        "max_missed": 3
+      },
+      {
+        "seed": 118,
+        "candidate_sets": 200,
+        "failure_fraction": 0.225,
+        "mean_missed": 0.26,
+        "max_missed": 3
+      },
+      {
+        "seed": 119,
+        "candidate_sets": 200,
+        "failure_fraction": 0.25,
+        "mean_missed": 0.285,
+        "max_missed": 2
+      },
+      {
+        "seed": 120,
+        "candidate_sets": 200,
+        "failure_fraction": 0.205,
+        "mean_missed": 0.225,
+        "max_missed": 3
+      },
+      {
+        "seed": 121,
+        "candidate_sets": 200,
+        "failure_fraction": 0.235,
+        "mean_missed": 0.275,
+        "max_missed": 2
+      },
+      {
+        "seed": 122,
+        "candidate_sets": 200,
+        "failure_fraction": 0.21,
+        "mean_missed": 0.23,
+        "max_missed": 2
+      },
+      {
+        "seed": 123,
+        "candidate_sets": 200,
+        "failure_fraction": 0.245,
+        "mean_missed": 0.285,
+        "max_missed": 3
+      },
+      {
+        "seed": 124,
+        "candidate_sets": 200,
+        "failure_fraction": 0.23,
+        "mean_missed": 0.275,
+        "max_missed": 4
+      },
+      {
+        "seed": 125,
+        "candidate_sets": 200,
+        "failure_fraction": 0.19,
+        "mean_missed": 0.21,
+        "max_missed": 2
+      },
+      {
+        "seed": 126,
+        "candidate_sets": 200,
+        "failure_fraction": 0.25,
+        "mean_missed": 0.285,
+        "max_missed": 3
+      },
+      {
+        "seed": 127,
+        "candidate_sets": 200,
+        "failure_fraction": 0.205,
+        "mean_missed": 0.225,
+        "max_missed": 2
+      },
+      {
+        "seed": 128,
+        "candidate_sets": 200,
+        "failure_fraction": 0.225,
+        "mean_missed": 0.245,
+        "max_missed": 3
+      },
+      {
+        "seed": 129,
+        "candidate_sets": 200,
+        "failure_fraction": 0.205,
+        "mean_missed": 0.23,
+        "max_missed": 4
+      },
+      {
+        "seed": 130,
+        "candidate_sets": 200,
+        "failure_fraction": 0.225,
+        "mean_missed": 0.285,
+        "max_missed": 5
+      },
+      {
+        "seed": 131,
+        "candidate_sets": 200,
+        "failure_fraction": 0.235,
+        "mean_missed": 0.26,
+        "max_missed": 3
+      },
+      {
+        "seed": 132,
+        "candidate_sets": 200,
+        "failure_fraction": 0.195,
+        "mean_missed": 0.245,
+        "max_missed": 3
+      },
+      {
+        "seed": 133,
+        "candidate_sets": 200,
+        "failure_fraction": 0.23,
+        "mean_missed": 0.245,
+        "max_missed": 2
+      },
+      {
+        "seed": 134,
+        "candidate_sets": 200,
+        "failure_fraction": 0.23,
+        "mean_missed": 0.24,
+        "max_missed": 2
+      },
+      {
+        "seed": 135,
+        "candidate_sets": 200,
+        "failure_fraction": 0.215,
+        "mean_missed": 0.245,
+        "max_missed": 2
+      },
+      {
+        "seed": 136,
+        "candidate_sets": 200,
+        "failure_fraction": 0.215,
+        "mean_missed": 0.26,
+        "max_missed": 3
+      },
+      {
+        "seed": 137,
+        "candidate_sets": 200,
+        "failure_fraction": 0.205,
+        "mean_missed": 0.225,
+        "max_missed": 3
+      },
+      {
+        "seed": 138,
+        "candidate_sets": 200,
+        "failure_fraction": 0.185,
+        "mean_missed": 0.235,
+        "max_missed": 4
+      },
+      {
+        "seed": 139,
+        "candidate_sets": 200,
+        "failure_fraction": 0.235,
+        "mean_missed": 0.27,
+        "max_missed": 3
+      },
+      {
+        "seed": 140,
+        "candidate_sets": 200,
+        "failure_fraction": 0.21,
+        "mean_missed": 0.24,
+        "max_missed": 3
+      },
+      {
+        "seed": 141,
+        "candidate_sets": 200,
+        "failure_fraction": 0.23,
+        "mean_missed": 0.28,
+        "max_missed": 3
+      },
+      {
+        "seed": 142,
+        "candidate_sets": 200,
+        "failure_fraction": 0.22,
+        "mean_missed": 0.245,
+        "max_missed": 2
+      },
+      {
+        "seed": 143,
+        "candidate_sets": 200,
+        "failure_fraction": 0.17,
+        "mean_missed": 0.205,
+        "max_missed": 3
+      },
+      {
+        "seed": 144,
+        "candidate_sets": 200,
+        "failure_fraction": 0.2,
+        "mean_missed": 0.21,
+        "max_missed": 2
+      },
+      {
+        "seed": 145,
+        "candidate_sets": 200,
+        "failure_fraction": 0.175,
+        "mean_missed": 0.195,
+        "max_missed": 2
+      },
+      {
+        "seed": 146,
+        "candidate_sets": 200,
+        "failure_fraction": 0.285,
+        "mean_missed": 0.31,
+        "max_missed": 3
+      },
+      {
+        "seed": 147,
+        "candidate_sets": 200,
+        "failure_fraction": 0.195,
+        "mean_missed": 0.24,
+        "max_missed": 3
+      },
+      {
+        "seed": 148,
+        "candidate_sets": 200,
+        "failure_fraction": 0.19,
+        "mean_missed": 0.21,
+        "max_missed": 2
+      },
+      {
+        "seed": 149,
+        "candidate_sets": 200,
+        "failure_fraction": 0.21,
+        "mean_missed": 0.215,
+        "max_missed": 2
+      },
+      {
+        "seed": 150,
+        "candidate_sets": 200,
+        "failure_fraction": 0.22,
+        "mean_missed": 0.26,
+        "max_missed": 2
+      },
+      {
+        "seed": 151,
+        "candidate_sets": 200,
+        "failure_fraction": 0.245,
+        "mean_missed": 0.255,
+        "max_missed": 2
+      },
+      {
+        "seed": 152,
+        "candidate_sets": 200,
+        "failure_fraction": 0.265,
+        "mean_missed": 0.29,
+        "max_missed": 3
+      },
+      {
+        "seed": 153,
+        "candidate_sets": 200,
+        "failure_fraction": 0.2,
+        "mean_missed": 0.225,
+        "max_missed": 2
+      },
+      {
+        "seed": 154,
+        "candidate_sets": 200,
+        "failure_fraction": 0.25,
+        "mean_missed": 0.29,
+        "max_missed": 3
+      },
+      {
+        "seed": 155,
+        "candidate_sets": 200,
+        "failure_fraction": 0.21,
+        "mean_missed": 0.235,
+        "max_missed": 3
+      },
+      {
+        "seed": 156,
+        "candidate_sets": 200,
+        "failure_fraction": 0.215,
+        "mean_missed": 0.22,
+        "max_missed": 2
+      },
+      {
+        "seed": 157,
+        "candidate_sets": 200,
+        "failure_fraction": 0.21,
+        "mean_missed": 0.235,
+        "max_missed": 2
+      },
+      {
+        "seed": 158,
+        "candidate_sets": 200,
+        "failure_fraction": 0.185,
+        "mean_missed": 0.23,
+        "max_missed": 3
+      },
+      {
+        "seed": 159,
+        "candidate_sets": 200,
+        "failure_fraction": 0.21,
+        "mean_missed": 0.245,
+        "max_missed": 3
+      },
+      {
+        "seed": 160,
+        "candidate_sets": 200,
+        "failure_fraction": 0.19,
+        "mean_missed": 0.205,
+        "max_missed": 2
+      },
+      {
+        "seed": 161,
+        "candidate_sets": 200,
+        "failure_fraction": 0.26,
+        "mean_missed": 0.305,
+        "max_missed": 3
+      },
+      {
+        "seed": 162,
+        "candidate_sets": 200,
+        "failure_fraction": 0.19,
+        "mean_missed": 0.23,
+        "max_missed": 3
+      },
+      {
+        "seed": 163,
+        "candidate_sets": 200,
+        "failure_fraction": 0.18,
+        "mean_missed": 0.23,
+        "max_missed": 3
+      },
+      {
+        "seed": 164,
+        "candidate_sets": 200,
+        "failure_fraction": 0.205,
+        "mean_missed": 0.235,
+        "max_missed": 3
+      },
+      {
+        "seed": 165,
+        "candidate_sets": 200,
+        "failure_fraction": 0.26,
+        "mean_missed": 0.285,
+        "max_missed": 4
+      },
+      {
+        "seed": 166,
+        "candidate_sets": 200,
+        "failure_fraction": 0.195,
+        "mean_missed": 0.22,
+        "max_missed": 3
+      },
+      {
+        "seed": 167,
+        "candidate_sets": 200,
+        "failure_fraction": 0.16,
+        "mean_missed": 0.18,
+        "max_missed": 2
+      },
+      {
+        "seed": 168,
+        "candidate_sets": 200,
+        "failure_fraction": 0.22,
+        "mean_missed": 0.255,
+        "max_missed": 2
+      },
+      {
+        "seed": 169,
+        "candidate_sets": 200,
+        "failure_fraction": 0.225,
+        "mean_missed": 0.265,
+        "max_missed": 4
+      },
+      {
+        "seed": 170,
+        "candidate_sets": 200,
+        "failure_fraction": 0.18,
+        "mean_missed": 0.195,
+        "max_missed": 2
+      },
+      {
+        "seed": 171,
+        "candidate_sets": 200,
+        "failure_fraction": 0.215,
+        "mean_missed": 0.225,
+        "max_missed": 2
+      },
+      {
+        "seed": 172,
+        "candidate_sets": 200,
+        "failure_fraction": 0.21,
+        "mean_missed": 0.225,
+        "max_missed": 2
+      },
+      {
+        "seed": 173,
+        "candidate_sets": 200,
+        "failure_fraction": 0.185,
+        "mean_missed": 0.21,
+        "max_missed": 2
+      },
+      {
+        "seed": 174,
+        "candidate_sets": 200,
+        "failure_fraction": 0.22,
+        "mean_missed": 0.255,
+        "max_missed": 3
+      },
+      {
+        "seed": 175,
+        "candidate_sets": 200,
+        "failure_fraction": 0.18,
+        "mean_missed": 0.21,
+        "max_missed": 5
+      },
+      {
+        "seed": 176,
+        "candidate_sets": 200,
+        "failure_fraction": 0.215,
+        "mean_missed": 0.235,
+        "max_missed": 4
+      },
+      {
+        "seed": 177,
+        "candidate_sets": 191,
+        "failure_fraction": 0.3089005235602094,
+        "mean_missed": 0.3612565445026178,
+        "max_missed": 3
+      },
+      {
+        "seed": 178,
+        "candidate_sets": 200,
+        "failure_fraction": 0.19,
+        "mean_missed": 0.225,
+        "max_missed": 3
+      },
+      {
+        "seed": 179,
+        "candidate_sets": 200,
+        "failure_fraction": 0.21,
+        "mean_missed": 0.235,
+        "max_missed": 2
+      },
+      {
+        "seed": 180,
+        "candidate_sets": 200,
+        "failure_fraction": 0.17,
+        "mean_missed": 0.19,
+        "max_missed": 2
+      },
+      {
+        "seed": 181,
+        "candidate_sets": 200,
+        "failure_fraction": 0.235,
+        "mean_missed": 0.24,
+        "max_missed": 2
+      },
+      {
+        "seed": 182,
+        "candidate_sets": 200,
+        "failure_fraction": 0.255,
+        "mean_missed": 0.3,
+        "max_missed": 2
+      },
+      {
+        "seed": 183,
+        "candidate_sets": 200,
+        "failure_fraction": 0.225,
+        "mean_missed": 0.235,
+        "max_missed": 2
+      },
+      {
+        "seed": 184,
+        "candidate_sets": 200,
+        "failure_fraction": 0.21,
+        "mean_missed": 0.245,
+        "max_missed": 3
+      },
+      {
+        "seed": 185,
+        "candidate_sets": 200,
+        "failure_fraction": 0.29,
+        "mean_missed": 0.32,
+        "max_missed": 3
+      },
+      {
+        "seed": 186,
+        "candidate_sets": 200,
+        "failure_fraction": 0.285,
+        "mean_missed": 0.33,
+        "max_missed": 2
+      },
+      {
+        "seed": 187,
+        "candidate_sets": 200,
+        "failure_fraction": 0.215,
+        "mean_missed": 0.225,
+        "max_missed": 2
+      },
+      {
+        "seed": 188,
+        "candidate_sets": 200,
+        "failure_fraction": 0.175,
+        "mean_missed": 0.205,
+        "max_missed": 2
+      },
+      {
+        "seed": 189,
+        "candidate_sets": 200,
+        "failure_fraction": 0.22,
+        "mean_missed": 0.23,
+        "max_missed": 2
+      },
+      {
+        "seed": 190,
+        "candidate_sets": 200,
+        "failure_fraction": 0.22,
+        "mean_missed": 0.28,
+        "max_missed": 5
+      },
+      {
+        "seed": 191,
+        "candidate_sets": 200,
+        "failure_fraction": 0.215,
+        "mean_missed": 0.25,
+        "max_missed": 3
+      },
+      {
+        "seed": 192,
+        "candidate_sets": 200,
+        "failure_fraction": 0.26,
+        "mean_missed": 0.3,
+        "max_missed": 3
+      },
+      {
+        "seed": 193,
+        "candidate_sets": 200,
+        "failure_fraction": 0.245,
+        "mean_missed": 0.295,
+        "max_missed": 4
+      },
+      {
+        "seed": 194,
+        "candidate_sets": 200,
+        "failure_fraction": 0.195,
+        "mean_missed": 0.21,
+        "max_missed": 3
+      },
+      {
+        "seed": 195,
+        "candidate_sets": 200,
+        "failure_fraction": 0.19,
+        "mean_missed": 0.205,
+        "max_missed": 2
+      },
+      {
+        "seed": 196,
+        "candidate_sets": 200,
+        "failure_fraction": 0.215,
+        "mean_missed": 0.245,
+        "max_missed": 3
+      },
+      {
+        "seed": 197,
+        "candidate_sets": 200,
+        "failure_fraction": 0.2,
+        "mean_missed": 0.21,
+        "max_missed": 2
+      },
+      {
+        "seed": 198,
+        "candidate_sets": 200,
+        "failure_fraction": 0.255,
+        "mean_missed": 0.28,
+        "max_missed": 3
+      },
+      {
+        "seed": 199,
+        "candidate_sets": 200,
+        "failure_fraction": 0.19,
+        "mean_missed": 0.215,
+        "max_missed": 4
+      }
+    ]
+  },
+  "batch_rbac": {
+    "rows": [
+      {
+        "case": "backend-sa parents",
+        "batch": 3,
+        "union": 0,
+        "under_gap": 3,
+        "missed": [
+          "backend-sa",
+          "backend-worker1",
+          "backend-worker2"
+        ]
+      },
+      {
+        "case": "ci-bot parents",
+        "batch": 3,
+        "union": 0,
+        "under_gap": 3,
+        "missed": [
+          "ci-bot",
+          "ci-step-build",
+          "ci-step-test"
+        ]
+      },
+      {
+        "case": "ci-step-deploy parents",
+        "batch": 1,
+        "union": 0,
+        "under_gap": 1,
+        "missed": [
+          "ci-step-deploy"
+        ]
+      }
+    ]
+  },
+  "event_selection": {
+    "random": {
+      "n": 200,
+      "failure_pct": 87.5,
+      "mean_overrev": 6.31,
+      "max_overrev": 73
+    },
+    "into_multi_parent": {
+      "n": 200,
+      "failure_pct": 100.0,
+      "mean_overrev": 5.365,
+      "max_overrev": 38
+    },
+    "root_adjacent": {
+      "n": 200,
+      "failure_pct": 92.5,
+      "mean_overrev": 11.815,
+      "max_overrev": 65
+    },
+    "deepest_parent": {
+      "n": 200,
+      "failure_pct": 63.5,
+      "mean_overrev": 1.36,
+      "max_overrev": 13
+    },
+    "largest_cascade": {
+      "n": 200,
+      "failure_pct": 100.0,
+      "mean_overrev": 49.95,
+      "max_overrev": 81
+    }
+  }
+}

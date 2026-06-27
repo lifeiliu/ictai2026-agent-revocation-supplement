@@ -1,0 +1,4698 @@
+{
+  "all_edge_revocation_cases": 1960,
+  "alternate_parent_cases": 320,
+  "baselines": {
+    "aps_tree_cascade": {
+      "all_edge_revocations": {
+        "cases": 1960,
+        "cases_with_over": 1260,
+        "cases_with_under": 0,
+        "exact_matches": 700,
+        "exact_rate": 0.35714285714285715,
+        "over_case_rate": 0.6428571428571429,
+        "over_total": 1560,
+        "under_case_rate": 0.0,
+        "under_total": 0
+      },
+      "alternate_parent_cases": {
+        "cases": 320,
+        "cases_with_over": 320,
+        "cases_with_under": 0,
+        "exact_matches": 0,
+        "exact_rate": 0.0,
+        "over_case_rate": 1.0,
+        "over_total": 360,
+        "preserve_rate": 0.0,
+        "preserved_shared_agent": 0,
+        "under_case_rate": 0.0,
+        "under_total": 0
+      },
+      "metadata": {
+        "label": "APS-style tree cascade",
+        "modeled": true,
+        "requires_complete_graph_at_verifier": false,
+        "target_language": "child plus descendants",
+        "target_unit": "subtree",
+        "verifier_independent": true
+      }
+    },
+    "complete_graph_revalidation": {
+      "all_edge_revocations": {
+        "cases": 1960,
+        "cases_with_over": 0,
+        "cases_with_under": 0,
+        "exact_matches": 1960,
+        "exact_rate": 1.0,
+        "over_case_rate": 0.0,
+        "over_total": 0,
+        "under_case_rate": 0.0,
+        "under_total": 0
+      },
+      "alternate_parent_cases": {
+        "cases": 320,
+        "cases_with_over": 0,
+        "cases_with_under": 0,
+        "exact_matches": 320,
+        "exact_rate": 1.0,
+        "over_case_rate": 0.0,
+        "over_total": 0,
+        "preserve_rate": 1.0,
+        "preserved_shared_agent": 320,
+        "under_case_rate": 0.0,
+        "under_total": 0
+      },
+      "metadata": {
+        "label": "Credential revocation + full graph revalidation",
+        "modeled": true,
+        "requires_complete_graph_at_verifier": true,
+        "target_language": "complete reachability recomputation",
+        "target_unit": "revoked edge credential",
+        "verifier_independent": false
+      }
+    },
+    "deployer_scoped_cascade": {
+      "all_edge_revocations": {
+        "cases": 1960,
+        "cases_with_over": 120,
+        "cases_with_under": 880,
+        "exact_matches": 960,
+        "exact_rate": 0.4897959183673469,
+        "over_case_rate": 0.061224489795918366,
+        "over_total": 120,
+        "under_case_rate": 0.4489795918367347,
+        "under_total": 1200
+      },
+      "alternate_parent_cases": {
+        "cases": 320,
+        "cases_with_over": 20,
+        "cases_with_under": 0,
+        "exact_matches": 300,
+        "exact_rate": 0.9375,
+        "over_case_rate": 0.0625,
+        "over_total": 20,
+        "preserve_rate": 0.9375,
+        "preserved_shared_agent": 300,
+        "under_case_rate": 0.0,
+        "under_total": 0
+      },
+      "metadata": {
+        "label": "Deployer-scoped cascade",
+        "modeled": true,
+        "requires_complete_graph_at_verifier": false,
+        "target_language": "same-deployer child plus descendants",
+        "target_unit": "local registry subtree",
+        "verifier_independent": true
+      }
+    },
+    "edge_contract": {
+      "all_edge_revocations": {
+        "cases": 1960,
+        "cases_with_over": 0,
+        "cases_with_under": 0,
+        "exact_matches": 1960,
+        "exact_rate": 1.0,
+        "over_case_rate": 0.0,
+        "over_total": 0,
+        "under_case_rate": 0.0,
+        "under_total": 0
+      },
+      "alternate_parent_cases": {
+        "cases": 320,
+        "cases_with_over": 0,
+        "cases_with_under": 0,
+        "exact_matches": 320,
+        "exact_rate": 1.0,
+        "over_case_rate": 0.0,
+        "over_total": 0,
+        "preserve_rate": 1.0,
+        "preserved_shared_agent": 320,
+        "under_case_rate": 0.0,
+        "under_total": 0
+      },
+      "metadata": {
+        "label": "Signed edge target (this paper)",
+        "modeled": true,
+        "requires_complete_graph_at_verifier": false,
+        "target_language": "reach(G)-reach(G\\R)",
+        "target_unit": "edge target set",
+        "verifier_independent": true
+      }
+    },
+    "holder_node_revocation": {
+      "all_edge_revocations": {
+        "cases": 1960,
+        "cases_with_over": 700,
+        "cases_with_under": 240,
+        "exact_matches": 1020,
+        "exact_rate": 0.5204081632653061,
+        "over_case_rate": 0.35714285714285715,
+        "over_total": 700,
+        "under_case_rate": 0.12244897959183673,
+        "under_total": 320
+      },
+      "alternate_parent_cases": {
+        "cases": 320,
+        "cases_with_over": 320,
+        "cases_with_under": 0,
+        "exact_matches": 0,
+        "exact_rate": 0.0,
+        "over_case_rate": 1.0,
+        "over_total": 320,
+        "preserve_rate": 0.0,
+        "preserved_shared_agent": 0,
+        "under_case_rate": 0.0,
+        "under_total": 0
+      },
+      "metadata": {
+        "label": "Holder/node credential revocation",
+        "modeled": true,
+        "requires_complete_graph_at_verifier": false,
+        "target_language": "one node",
+        "target_unit": "agent identity or holder token",
+        "verifier_independent": true
+      }
+    }
+  },
+  "cross_domain_target_cases": {
+    "cases": 880,
+    "scoped_under_cases": 880
+  },
+  "experiment": "E16 baseline expressiveness",
+  "input": "traces/normalized_events.jsonl",
+  "per_trace": [
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "code",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-code-r000",
+      "workflow": "code"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "code",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-code-r001",
+      "workflow": "code"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "code",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-code-r002",
+      "workflow": "code"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "code",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-code-r003",
+      "workflow": "code"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "code",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-code-r004",
+      "workflow": "code"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "code",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-code-r005",
+      "workflow": "code"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "code",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-code-r006",
+      "workflow": "code"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "code",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-code-r007",
+      "workflow": "code"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "code",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-code-r008",
+      "workflow": "code"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "code",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-code-r009",
+      "workflow": "code"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "code",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-code-r010",
+      "workflow": "code"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "code",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-code-r011",
+      "workflow": "code"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "code",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-code-r012",
+      "workflow": "code"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "code",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-code-r013",
+      "workflow": "code"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "code",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-code-r014",
+      "workflow": "code"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "code",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-code-r015",
+      "workflow": "code"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "code",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-code-r016",
+      "workflow": "code"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "code",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-code-r017",
+      "workflow": "code"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "code",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-code-r018",
+      "workflow": "code"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "code",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-code-r019",
+      "workflow": "code"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 9,
+      "input_cell": "etl",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-etl-r000",
+      "workflow": "etl"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 9,
+      "input_cell": "etl",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-etl-r001",
+      "workflow": "etl"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 9,
+      "input_cell": "etl",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-etl-r002",
+      "workflow": "etl"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 9,
+      "input_cell": "etl",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-etl-r003",
+      "workflow": "etl"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 9,
+      "input_cell": "etl",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-etl-r004",
+      "workflow": "etl"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 9,
+      "input_cell": "etl",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-etl-r005",
+      "workflow": "etl"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 9,
+      "input_cell": "etl",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-etl-r006",
+      "workflow": "etl"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 9,
+      "input_cell": "etl",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-etl-r007",
+      "workflow": "etl"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 9,
+      "input_cell": "etl",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-etl-r008",
+      "workflow": "etl"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 9,
+      "input_cell": "etl",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-etl-r009",
+      "workflow": "etl"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 9,
+      "input_cell": "etl",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-etl-r010",
+      "workflow": "etl"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 9,
+      "input_cell": "etl",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-etl-r011",
+      "workflow": "etl"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 9,
+      "input_cell": "etl",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-etl-r012",
+      "workflow": "etl"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 9,
+      "input_cell": "etl",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-etl-r013",
+      "workflow": "etl"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 9,
+      "input_cell": "etl",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-etl-r014",
+      "workflow": "etl"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 9,
+      "input_cell": "etl",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-etl-r015",
+      "workflow": "etl"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 9,
+      "input_cell": "etl",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-etl-r016",
+      "workflow": "etl"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 9,
+      "input_cell": "etl",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-etl-r017",
+      "workflow": "etl"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 9,
+      "input_cell": "etl",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-etl-r018",
+      "workflow": "etl"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 9,
+      "input_cell": "etl",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-etl-r019",
+      "workflow": "etl"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 5,
+      "input_cell": "incident",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-incident-r000",
+      "workflow": "incident"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 5,
+      "input_cell": "incident",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-incident-r001",
+      "workflow": "incident"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 5,
+      "input_cell": "incident",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-incident-r002",
+      "workflow": "incident"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 5,
+      "input_cell": "incident",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-incident-r003",
+      "workflow": "incident"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 5,
+      "input_cell": "incident",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-incident-r004",
+      "workflow": "incident"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 5,
+      "input_cell": "incident",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-incident-r005",
+      "workflow": "incident"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 5,
+      "input_cell": "incident",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-incident-r006",
+      "workflow": "incident"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 5,
+      "input_cell": "incident",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-incident-r007",
+      "workflow": "incident"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 5,
+      "input_cell": "incident",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-incident-r008",
+      "workflow": "incident"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 5,
+      "input_cell": "incident",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-incident-r009",
+      "workflow": "incident"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 5,
+      "input_cell": "incident",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-incident-r010",
+      "workflow": "incident"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 5,
+      "input_cell": "incident",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-incident-r011",
+      "workflow": "incident"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 5,
+      "input_cell": "incident",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-incident-r012",
+      "workflow": "incident"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 5,
+      "input_cell": "incident",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-incident-r013",
+      "workflow": "incident"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 5,
+      "input_cell": "incident",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-incident-r014",
+      "workflow": "incident"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 5,
+      "input_cell": "incident",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-incident-r015",
+      "workflow": "incident"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 5,
+      "input_cell": "incident",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-incident-r016",
+      "workflow": "incident"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 5,
+      "input_cell": "incident",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-incident-r017",
+      "workflow": "incident"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 5,
+      "input_cell": "incident",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-incident-r018",
+      "workflow": "incident"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 5,
+      "input_cell": "incident",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-incident-r019",
+      "workflow": "incident"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 6,
+      "input_cell": "multitenant",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-multitenant-r000",
+      "workflow": "multitenant"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 6,
+      "input_cell": "multitenant",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-multitenant-r001",
+      "workflow": "multitenant"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 6,
+      "input_cell": "multitenant",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-multitenant-r002",
+      "workflow": "multitenant"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 6,
+      "input_cell": "multitenant",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-multitenant-r003",
+      "workflow": "multitenant"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 6,
+      "input_cell": "multitenant",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-multitenant-r004",
+      "workflow": "multitenant"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 6,
+      "input_cell": "multitenant",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-multitenant-r005",
+      "workflow": "multitenant"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 6,
+      "input_cell": "multitenant",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-multitenant-r006",
+      "workflow": "multitenant"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 6,
+      "input_cell": "multitenant",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-multitenant-r007",
+      "workflow": "multitenant"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 6,
+      "input_cell": "multitenant",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-multitenant-r008",
+      "workflow": "multitenant"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 6,
+      "input_cell": "multitenant",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-multitenant-r009",
+      "workflow": "multitenant"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 6,
+      "input_cell": "multitenant",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-multitenant-r010",
+      "workflow": "multitenant"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 6,
+      "input_cell": "multitenant",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-multitenant-r011",
+      "workflow": "multitenant"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 6,
+      "input_cell": "multitenant",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-multitenant-r012",
+      "workflow": "multitenant"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 6,
+      "input_cell": "multitenant",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-multitenant-r013",
+      "workflow": "multitenant"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 6,
+      "input_cell": "multitenant",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-multitenant-r014",
+      "workflow": "multitenant"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 6,
+      "input_cell": "multitenant",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-multitenant-r015",
+      "workflow": "multitenant"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 6,
+      "input_cell": "multitenant",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-multitenant-r016",
+      "workflow": "multitenant"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 6,
+      "input_cell": "multitenant",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-multitenant-r017",
+      "workflow": "multitenant"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 6,
+      "input_cell": "multitenant",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-multitenant-r018",
+      "workflow": "multitenant"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 6,
+      "input_cell": "multitenant",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-multitenant-r019",
+      "workflow": "multitenant"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "rag",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-rag-r000",
+      "workflow": "rag"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "rag",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-rag-r001",
+      "workflow": "rag"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "rag",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-rag-r002",
+      "workflow": "rag"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "rag",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-rag-r003",
+      "workflow": "rag"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "rag",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-rag-r004",
+      "workflow": "rag"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "rag",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-rag-r005",
+      "workflow": "rag"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "rag",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-rag-r006",
+      "workflow": "rag"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "rag",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-rag-r007",
+      "workflow": "rag"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "rag",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-rag-r008",
+      "workflow": "rag"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "rag",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-rag-r009",
+      "workflow": "rag"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "rag",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-rag-r010",
+      "workflow": "rag"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "rag",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-rag-r011",
+      "workflow": "rag"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "rag",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-rag-r012",
+      "workflow": "rag"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "rag",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-rag-r013",
+      "workflow": "rag"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "rag",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-rag-r014",
+      "workflow": "rag"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "rag",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-rag-r015",
+      "workflow": "rag"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "rag",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-rag-r016",
+      "workflow": "rag"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "rag",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-rag-r017",
+      "workflow": "rag"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "rag",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-rag-r018",
+      "workflow": "rag"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "rag",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-rag-r019",
+      "workflow": "rag"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "research",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-research-r000",
+      "workflow": "research"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "research",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-research-r001",
+      "workflow": "research"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "research",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-research-r002",
+      "workflow": "research"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "research",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-research-r003",
+      "workflow": "research"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "research",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-research-r004",
+      "workflow": "research"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "research",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-research-r005",
+      "workflow": "research"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "research",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-research-r006",
+      "workflow": "research"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "research",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-research-r007",
+      "workflow": "research"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "research",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-research-r008",
+      "workflow": "research"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "research",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-research-r009",
+      "workflow": "research"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "research",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-research-r010",
+      "workflow": "research"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "research",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-research-r011",
+      "workflow": "research"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "research",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-research-r012",
+      "workflow": "research"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "research",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-research-r013",
+      "workflow": "research"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "research",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-research-r014",
+      "workflow": "research"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "research",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-research-r015",
+      "workflow": "research"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "research",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-research-r016",
+      "workflow": "research"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "research",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-research-r017",
+      "workflow": "research"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "research",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-research-r018",
+      "workflow": "research"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 5,
+      "input_cell": "research",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-research-r019",
+      "workflow": "research"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev1",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev1-r000",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev1",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev1-r001",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev1",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev1-r002",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev1",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev1-r003",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev1",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev1-r004",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev1",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev1-r005",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev1",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev1-r006",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev1",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev1-r007",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev1",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev1-r008",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev1",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev1-r009",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev1",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev1-r010",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev1",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev1-r011",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev1",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev1-r012",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev1",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev1-r013",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev1",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev1-r014",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev1",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev1-r015",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev1",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev1-r016",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev1",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev1-r017",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev1",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev1-r018",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev1",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev1-r019",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev2",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev2-r000",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev2",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev2-r001",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev2",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev2-r002",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev2",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev2-r003",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev2",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev2-r004",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev2",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev2-r005",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev2",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev2-r006",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev2",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev2-r007",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev2",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev2-r008",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev2",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev2-r009",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev2",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev2-r010",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev2",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev2-r011",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev2",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev2-r012",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev2",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev2-r013",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev2",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev2-r014",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev2",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev2-r015",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev2",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev2-r016",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev2",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev2-r017",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev2",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev2-r018",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev2",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev2-r019",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev3",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev3-r000",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev3",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev3-r001",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev3",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev3-r002",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev3",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev3-r003",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev3",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev3-r004",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev3",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev3-r005",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev3",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev3-r006",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev3",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev3-r007",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev3",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev3-r008",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev3",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev3-r009",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev3",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev3-r010",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev3",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev3-r011",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev3",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev3-r012",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev3",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev3-r013",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev3",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev3-r014",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev3",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev3-r015",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev3",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev3-r016",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev3",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev3-r017",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev3",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev3-r018",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev3",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev3-r019",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev4",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev4-r000",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev4",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev4-r001",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev4",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev4-r002",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev4",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev4-r003",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev4",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev4-r004",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev4",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev4-r005",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev4",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev4-r006",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev4",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev4-r007",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev4",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev4-r008",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev4",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev4-r009",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev4",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev4-r010",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev4",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev4-r011",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev4",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev4-r012",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev4",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev4-r013",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev4",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev4-r014",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev4",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev4-r015",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev4",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev4-r016",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev4",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev4-r017",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev4",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev4-r018",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 1,
+      "edges": 4,
+      "input_cell": "support-ambiguous-sev4",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-support-ambiguous-sev4-r019",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev5",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev5-r000",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev5",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev5-r001",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev5",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev5-r002",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev5",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev5-r003",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev5",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev5-r004",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev5",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev5-r005",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev5",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev5-r006",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev5",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev5-r007",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev5",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev5-r008",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev5",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev5-r009",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev5",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev5-r010",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev5",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev5-r011",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev5",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev5-r012",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev5",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev5-r013",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev5",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev5-r014",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev5",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev5-r015",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev5",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev5-r016",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev5",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev5-r017",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev5",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev5-r018",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev5",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev5-r019",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev6",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev6-r000",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev6",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev6-r001",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev6",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev6-r002",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev6",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev6-r003",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev6",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev6-r004",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev6",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev6-r005",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev6",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev6-r006",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev6",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev6-r007",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev6",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev6-r008",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev6",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev6-r009",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev6",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev6-r010",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev6",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev6-r011",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev6",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev6-r012",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev6",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev6-r013",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev6",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev6-r014",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev6",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev6-r015",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev6",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev6-r016",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev6",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev6-r017",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev6",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev6-r018",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 2,
+      "cross_deployer_multiparent_agents": 2,
+      "edges": 6,
+      "input_cell": "support-ambiguous-sev6",
+      "multiparent_agents": 2,
+      "trace_id": "langgraph-support-ambiguous-sev6-r019",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev1-r000",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev1-r001",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev1-r002",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev1-r003",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev1-r004",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev1-r005",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev1-r006",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev1-r007",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev1-r008",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev1-r009",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev1-r010",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev1-r011",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev1-r012",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev1-r013",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev1-r014",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev1-r015",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev1-r016",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev1-r017",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev1-r018",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev1-r019",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev2-r000",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev2-r001",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev2-r002",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev2-r003",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev2-r004",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev2-r005",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev2-r006",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev2-r007",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev2-r008",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev2-r009",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev2-r010",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev2-r011",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev2-r012",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev2-r013",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev2-r014",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev2-r015",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev2-r016",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev2-r017",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev2-r018",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev2-r019",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev3-r000",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev3-r001",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev3-r002",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev3-r003",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev3-r004",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev3-r005",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev3-r006",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev3-r007",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev3-r008",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev3-r009",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev3-r010",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev3-r011",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev3-r012",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev3-r013",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev3-r014",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev3-r015",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev3-r016",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev3-r017",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev3-r018",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev3-r019",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev4-r000",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev4-r001",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev4-r002",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev4-r003",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev4-r004",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev4-r005",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev4-r006",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev4-r007",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev4-r008",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev4-r009",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev4-r010",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev4-r011",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev4-r012",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev4-r013",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev4-r014",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev4-r015",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev4-r016",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev4-r017",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev4-r018",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-billing-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev4-r019",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev5-r000",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev5-r001",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev5-r002",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev5-r003",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev5-r004",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev5-r005",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev5-r006",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev5-r007",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev5-r008",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev5-r009",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev5-r010",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev5-r011",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev5-r012",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev5-r013",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev5-r014",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev5-r015",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev5-r016",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev5-r017",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev5-r018",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev5-r019",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev6-r000",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev6-r001",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev6-r002",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev6-r003",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev6-r004",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev6-r005",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev6-r006",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev6-r007",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev6-r008",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev6-r009",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev6-r010",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev6-r011",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev6-r012",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev6-r013",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev6-r014",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev6-r015",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev6-r016",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev6-r017",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev6-r018",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-billing-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-billing-sev6-r019",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev1-r000",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev1-r001",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev1-r002",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev1-r003",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev1-r004",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev1-r005",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev1-r006",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev1-r007",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev1-r008",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev1-r009",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev1-r010",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev1-r011",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev1-r012",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev1-r013",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev1-r014",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev1-r015",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev1-r016",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev1-r017",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev1-r018",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev1",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev1-r019",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev2-r000",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev2-r001",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev2-r002",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev2-r003",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev2-r004",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev2-r005",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev2-r006",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev2-r007",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev2-r008",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev2-r009",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev2-r010",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev2-r011",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev2-r012",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev2-r013",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev2-r014",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev2-r015",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev2-r016",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev2-r017",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev2-r018",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev2",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev2-r019",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev3-r000",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev3-r001",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev3-r002",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev3-r003",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev3-r004",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev3-r005",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev3-r006",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev3-r007",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev3-r008",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev3-r009",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev3-r010",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev3-r011",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev3-r012",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev3-r013",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev3-r014",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev3-r015",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev3-r016",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev3-r017",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev3-r018",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev3",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev3-r019",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev4-r000",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev4-r001",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev4-r002",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev4-r003",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev4-r004",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev4-r005",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev4-r006",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev4-r007",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev4-r008",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev4-r009",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev4-r010",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev4-r011",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev4-r012",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev4-r013",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev4-r014",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev4-r015",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev4-r016",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev4-r017",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev4-r018",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 2,
+      "input_cell": "support-tech-sev4",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev4-r019",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev5-r000",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev5-r001",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev5-r002",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev5-r003",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev5-r004",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev5-r005",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev5-r006",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev5-r007",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev5-r008",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev5-r009",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev5-r010",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev5-r011",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev5-r012",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev5-r013",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev5-r014",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev5-r015",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev5-r016",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev5-r017",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev5-r018",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev5",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev5-r019",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev6-r000",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev6-r001",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev6-r002",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev6-r003",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev6-r004",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev6-r005",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev6-r006",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev6-r007",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev6-r008",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev6-r009",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev6-r010",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev6-r011",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev6-r012",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev6-r013",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev6-r014",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev6-r015",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev6-r016",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev6-r017",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev6-r018",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 0,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 3,
+      "input_cell": "support-tech-sev6",
+      "multiparent_agents": 0,
+      "trace_id": "langgraph-support-tech-sev6-r019",
+      "workflow": "support"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 7,
+      "input_cell": "travel",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-travel-r000",
+      "workflow": "travel"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 7,
+      "input_cell": "travel",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-travel-r001",
+      "workflow": "travel"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 7,
+      "input_cell": "travel",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-travel-r002",
+      "workflow": "travel"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 7,
+      "input_cell": "travel",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-travel-r003",
+      "workflow": "travel"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 7,
+      "input_cell": "travel",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-travel-r004",
+      "workflow": "travel"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 7,
+      "input_cell": "travel",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-travel-r005",
+      "workflow": "travel"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 7,
+      "input_cell": "travel",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-travel-r006",
+      "workflow": "travel"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 7,
+      "input_cell": "travel",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-travel-r007",
+      "workflow": "travel"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 7,
+      "input_cell": "travel",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-travel-r008",
+      "workflow": "travel"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 7,
+      "input_cell": "travel",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-travel-r009",
+      "workflow": "travel"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 7,
+      "input_cell": "travel",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-travel-r010",
+      "workflow": "travel"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 7,
+      "input_cell": "travel",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-travel-r011",
+      "workflow": "travel"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 7,
+      "input_cell": "travel",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-travel-r012",
+      "workflow": "travel"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 7,
+      "input_cell": "travel",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-travel-r013",
+      "workflow": "travel"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 7,
+      "input_cell": "travel",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-travel-r014",
+      "workflow": "travel"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 7,
+      "input_cell": "travel",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-travel-r015",
+      "workflow": "travel"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 7,
+      "input_cell": "travel",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-travel-r016",
+      "workflow": "travel"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 7,
+      "input_cell": "travel",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-travel-r017",
+      "workflow": "travel"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 7,
+      "input_cell": "travel",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-travel-r018",
+      "workflow": "travel"
+    },
+    {
+      "alternate_parent_cases": 1,
+      "cross_deployer_multiparent_agents": 0,
+      "edges": 7,
+      "input_cell": "travel",
+      "multiparent_agents": 1,
+      "trace_id": "langgraph-travel-r019",
+      "workflow": "travel"
+    }
+  ],
+  "signed_delegation_events": 2000,
+  "trace_units": 500,
+  "traces_with_alternate_parent_case": 260,
+  "unmodeled_target_language_gaps": {
+    "token_protocols_no_target_set": {
+      "label": "CRL/OCSP/OAuth/MCP/AIP token or chain revocation",
+      "modeled": false,
+      "note": "These mechanisms can invalidate a credential/token/chain, but do not define a verifier-checkable set of all agents that lose authority in a multi-parent runtime DAG.",
+      "requires_complete_graph_at_verifier": null,
+      "target_language": "no multi-parent DAG target set",
+      "target_unit": "credential, token, or delegation chain",
+      "verifier_independent": null
+    }
+  }
+}
